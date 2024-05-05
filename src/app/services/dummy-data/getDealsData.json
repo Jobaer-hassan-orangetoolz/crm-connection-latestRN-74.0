@@ -1,0 +1,772 @@
+{
+  "folders": [
+    {
+      "id": 417,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "pipeline 1",
+      "order": 1,
+      "status": 1,
+      "created_at": "2021-01-07 17:39:49",
+      "updated_at": "2023-09-10 05:11:47",
+      "visible_in_funnel_chart": 0,
+      "visible_in_pie_chart": 0,
+      "uuid": "307edc1f-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 527,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "test",
+      "order": 2,
+      "status": 1,
+      "created_at": "2021-01-25 07:57:24",
+      "updated_at": "2023-08-20 05:58:52",
+      "visible_in_funnel_chart": 0,
+      "visible_in_pie_chart": 0,
+      "uuid": "307ef60b-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 753,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "test1234",
+      "order": 3,
+      "status": 1,
+      "created_at": "2021-02-18 12:19:08",
+      "updated_at": "2021-02-18 12:19:08",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "307f18d5-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 1317,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "New add from contacts",
+      "order": 1,
+      "status": 1,
+      "created_at": "2021-05-07 13:44:45",
+      "updated_at": "2021-05-07 13:44:45",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "307f9bf6-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 1340,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "Hkh",
+      "order": 1,
+      "status": 1,
+      "created_at": "2021-05-12 05:12:27",
+      "updated_at": "2021-05-12 05:12:27",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "307f9def-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 1341,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "Gjhf",
+      "order": 1,
+      "status": 1,
+      "created_at": "2021-05-12 05:55:58",
+      "updated_at": "2021-05-12 05:55:58",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "307f9e6b-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 1389,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "New Pipeline",
+      "order": 7,
+      "status": 1,
+      "created_at": "2021-05-16 05:26:54",
+      "updated_at": "2021-05-16 05:26:54",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "307fad74-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 13068,
+      "team_id": 319,
+      "user_id": 9655,
+      "title": "pipeline 1",
+      "order": 1,
+      "status": 1,
+      "created_at": "2023-07-17 05:04:08",
+      "updated_at": "2023-07-17 05:04:08",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "309df0e3-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 9655,
+        "full_name": "atish sub",
+        "role_user": {
+          "user_id": 9655,
+          "role_id": 3
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 13069,
+      "team_id": 319,
+      "user_id": 9655,
+      "title": "test",
+      "order": 2,
+      "status": 1,
+      "created_at": "2023-07-17 05:04:08",
+      "updated_at": "2023-07-17 05:04:08",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "309df167-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 9655,
+        "full_name": "atish sub",
+        "role_user": {
+          "user_id": 9655,
+          "role_id": 3
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 13070,
+      "team_id": 319,
+      "user_id": 9655,
+      "title": "test1234",
+      "order": 3,
+      "status": 1,
+      "created_at": "2023-07-17 05:04:08",
+      "updated_at": "2023-07-17 05:04:08",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "309df212-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 9655,
+        "full_name": "atish sub",
+        "role_user": {
+          "user_id": 9655,
+          "role_id": 3
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 13071,
+      "team_id": 319,
+      "user_id": 9655,
+      "title": "New add from contacts",
+      "order": 1,
+      "status": 1,
+      "created_at": "2023-07-17 05:04:08",
+      "updated_at": "2023-07-17 05:04:08",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "309df29c-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 9655,
+        "full_name": "atish sub",
+        "role_user": {
+          "user_id": 9655,
+          "role_id": 3
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 13072,
+      "team_id": 319,
+      "user_id": 9655,
+      "title": "Hkh",
+      "order": 1,
+      "status": 1,
+      "created_at": "2023-07-17 05:04:08",
+      "updated_at": "2023-07-17 05:04:08",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "309df320-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 9655,
+        "full_name": "atish sub",
+        "role_user": {
+          "user_id": 9655,
+          "role_id": 3
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 13073,
+      "team_id": 319,
+      "user_id": 9655,
+      "title": "Gjhf",
+      "order": 1,
+      "status": 1,
+      "created_at": "2023-07-17 05:04:08",
+      "updated_at": "2023-07-17 05:04:08",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "309df3a8-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 9655,
+        "full_name": "atish sub",
+        "role_user": {
+          "user_id": 9655,
+          "role_id": 3
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 13074,
+      "team_id": 319,
+      "user_id": 9655,
+      "title": "New Pipeline",
+      "order": 7,
+      "status": 1,
+      "created_at": "2023-07-17 05:04:08",
+      "updated_at": "2023-07-17 05:04:08",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "309df42e-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 9655,
+        "full_name": "atish sub",
+        "role_user": {
+          "user_id": 9655,
+          "role_id": 3
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 14754,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "XDX",
+      "order": 8,
+      "status": 1,
+      "created_at": "2023-09-10 05:00:20",
+      "updated_at": "2023-09-10 05:00:20",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "30a358bc-9f5f-11ee-894c-42010a2400c1",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    },
+    {
+      "id": 17055,
+      "team_id": 319,
+      "user_id": 446,
+      "title": "pipeline3",
+      "order": 9,
+      "status": 1,
+      "created_at": "2023-12-17 08:01:33",
+      "updated_at": "2023-12-17 08:01:33",
+      "visible_in_funnel_chart": 1,
+      "visible_in_pie_chart": 1,
+      "uuid": "e4fc6449-3c35-4ac4-9010-d6bf7ad00808",
+      "user": {
+        "id": 446,
+        "full_name": "Dev atish",
+        "role_user": {
+          "user_id": 446,
+          "role_id": 1
+        },
+        "local_created_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        },
+        "local_updated_at": {
+          "date": null,
+          "time": null,
+          "for_human": null,
+          "date_time": null
+        }
+      }
+    }
+  ],
+  "stage": {
+    "data": [
+      {
+        "id": 71179,
+        "team_id": 319,
+        "user_id": 446,
+        "pipeline_id": 417,
+        "stage": "Stage 2",
+        "total_contact": 2,
+        "total_deals": 400,
+        "status": 1,
+        "type": 2,
+        "color_code": "#376B3F",
+        "position": 1,
+        "created_at": "2023-07-22 04:30:31",
+        "updated_at": "2023-12-13 15:46:21",
+        "percentage": 1,
+        "show_in_chart": 1,
+        "text_color": "#FFFFFF",
+        "uuid": "0198fbf4-9f5f-11ee-894c-42010a2400c1"
+      },
+      {
+        "id": 71178,
+        "team_id": 319,
+        "user_id": 446,
+        "pipeline_id": 417,
+        "stage": "Stage one",
+        "total_contact": 48,
+        "total_deals": 0,
+        "status": 1,
+        "type": 2,
+        "color_code": "#376B3F",
+        "position": 2,
+        "created_at": "2023-07-22 04:30:19",
+        "updated_at": "2023-12-14 10:50:28",
+        "percentage": 1,
+        "show_in_chart": 1,
+        "text_color": "#FFFFFF",
+        "uuid": "0198fa20-9f5f-11ee-894c-42010a2400c1"
+      }
+    ],
+    "total_deal_stats": {
+      "total_deals": 240,
+      "win": "0",
+      "active": "50",
+      "lost": "0"
+    }
+  },
+  "stageContactList": [
+    {
+      "contact_stages_id": 4541153,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246369,
+      "source": 4147,
+      "first_name": "Mattie",
+      "last_name": "",
+      "company": "Century Communications",
+      "number": "16029536360",
+      "email": "mattie@aol.com"
+    },
+    {
+      "contact_stages_id": 4541154,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246370,
+      "source": 4147,
+      "first_name": "Meaghan",
+      "last_name": "",
+      "company": "Bolton, Wilbur Esq",
+      "number": "19312357959",
+      "email": "meaghan@hotmail.com"
+    },
+    {
+      "contact_stages_id": 4541155,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246371,
+      "source": 4147,
+      "first_name": "Gladys",
+      "last_name": "",
+      "company": "T M Byxbee Company Pc",
+      "number": "14143772880",
+      "email": "gladys.rim@rim.org"
+    },
+    {
+      "contact_stages_id": 4541156,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246372,
+      "source": 4147,
+      "first_name": "Yuki",
+      "last_name": "",
+      "company": "Farmers Insurance Group",
+      "number": "13133414470",
+      "email": "yuki_whobrey@aol.com"
+    },
+    {
+      "contact_stages_id": 4541157,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246373,
+      "source": 4147,
+      "first_name": "Fletcher",
+      "last_name": "",
+      "company": "Post Box Services Plus",
+      "number": "18154265657",
+      "email": "fletcher.flosi@yahoo.com"
+    },
+    {
+      "contact_stages_id": 4541158,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246374,
+      "source": 4147,
+      "first_name": "Bette",
+      "last_name": "",
+      "company": "Sport En Art",
+      "number": "16104924643",
+      "email": "bette_nicka@cox.net"
+    },
+    {
+      "contact_stages_id": 4541159,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246375,
+      "source": 4147,
+      "first_name": "Veronika",
+      "last_name": "",
+      "company": "C 4 Network Inc",
+      "number": "14088134592",
+      "email": "vinouye@aol.com"
+    },
+    {
+      "contact_stages_id": 4541160,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246376,
+      "source": 4147,
+      "first_name": "Willard",
+      "last_name": "",
+      "company": "Ingalls, Donald R Esq",
+      "number": "19728964882",
+      "email": "willard@hotmail.com"
+    },
+    {
+      "contact_stages_id": 4541161,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246377,
+      "source": 4147,
+      "first_name": "Maryann",
+      "last_name": "",
+      "company": "Franklin, Peter L Esq",
+      "number": "15184488982",
+      "email": "mroyster@royster.com"
+    },
+    {
+      "contact_stages_id": 4541162,
+      "title": null,
+      "bgColor": "#ff0088",
+      "created_at": "2023-08-03 04:40:11",
+      "moved_at": "2023-08-03 04:40:11",
+      "deal_value": 0,
+      "estimate_closing_date": null,
+      "contact_stage_status": 1,
+      "order": "1.00000000",
+      "user_stage_id": 71178,
+      "contact_id": 28246378,
+      "source": 4147,
+      "first_name": "Alisha",
+      "last_name": "",
+      "company": "Wtlz Power 107 Fm",
+      "number": "17326353453",
+      "email": "alisha@slusarski.com"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "319002989501",
+    "project_id": "crm-connection-f7e5a",
+    "storage_bucket": "crm-connection-f7e5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319002989501:android:d315b27b577e2ea7cd78d4",
+        "android_client_info": {
+          "package_name": "com.crmconnection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf3PmbtWKeiaCslN8iwIv8LsoIjZdAvks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

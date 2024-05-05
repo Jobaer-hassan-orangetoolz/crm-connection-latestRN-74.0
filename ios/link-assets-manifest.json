@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Onest-Regular.ttf",
+      "sha1": "7fd6bbad039ed1a565cb85f31679a7e4bc4fcfe3"
+    },
+    {
+      "path": "assets/fonts/Onest-SemiBold.ttf",
+      "sha1": "7089eacea65b9ae18cff842885e2c28c98c31554"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "status": true,
+  "body": [
+    {
+      "id": 1,
+      "description": "Lorem, ipsum dolor sit amet consectetur @[Jubaer Ahmed](id: 121) adipisicing elit. Natus mollitia numquam consequuntur nisi iste! Dignissimos quibusdam eligendi repellat ullam doloremque, @[Shipon Ahmed](id:12) ut inventore voluptas quas tempora recusandae ratione ipsam consectetur labore et eius laboriosam sequi in alias. Ipsa deleniti laborum iste porro expedita ea unde sunt. Quo magnam quod inventore quasi!",
+      "creator": {
+        "firstName": "Sohan",
+        "lastName": "undefined",
+        "id": "123"
+      },
+      "createdAt": "2023-12-04T09:08:00.908Z"
+    },
+    {
+      "id": 2,
+      "description": "Lorem, ipsum dolor sit amet consectetur @[Jubaer Ahmed](id: 121) adipisicing elit. Natus mollitia numquam consequuntur nisi iste! Dignissimos quibusdam eligendi repellat ullam doloremque, @[Shipon Ahmed](id:12) ut inventore voluptas quas tempora recusandae ratione ipsam consectetur labore et eius laboriosam sequi in alias. Ipsa deleniti laborum iste porro expedita ea unde sunt. Quo magnam quod inventore quasi!",
+      "creator": {
+        "firstName": "Juaber",
+        "lastName": "Ahmed",
+        "id": "123"
+      },
+      "createdAt": "2023-12-04T09:08:00.908Z"
+    },
+    {
+      "id": 3,
+      "description": "Lorem, ipsum dolor sit amet consectetur @[Jubaer Ahmed](id: 121) adipisicing elit. Natus mollitia numquam consequuntur nisi iste! Dignissimos quibusdam eligendi repellat ullam doloremque, @[Shipon Ahmed](id:12) ut inventore voluptas quas tempora recusandae ratione ipsam consectetur labore et eius laboriosam sequi in alias. Ipsa deleniti laborum iste porro expedita ea unde sunt. Quo magnam quod inventore quasi!",
+      "creator": {
+        "firstName": "Litton",
+        "lastName": "Dev",
+        "id": "123"
+      },
+      "createdAt": "2023-12-04T09:08:00.908Z"
+    },
+    {
+      "id": 4,
+      "description": "Lorem, ipsum dolor sit amet consectetur @[Jubaer Ahmed](id: 121) adipisicing elit. Natus mollitia numquam consequuntur nisi iste! Dignissimos quibusdam eligendi repellat ullam doloremque, @[Shipon Ahmed](id:12) ut inventore voluptas quas tempora recusandae ratione ipsam consectetur labore et eius laboriosam sequi in alias. Ipsa deleniti laborum iste porro expedita ea unde sunt. Quo magnam quod inventore quasi!",
+      "creator": {
+        "firstName": "null",
+        "lastName": "Methon",
+        "id": "123"
+      },
+      "createdAt": "2023-12-04T09:08:00.908Z"
+    },
+    {
+      "id": 5,
+      "description": "Lorem, ipsum dolor sit amet consectetur @[Jubaer Ahmed](id: 121) adipisicing elit. Natus mollitia numquam consequuntur nisi iste! Dignissimos quibusdam eligendi repellat ullam doloremque, @[Shipon Ahmed](id:12) ut inventore voluptas quas tempora recusandae ratione ipsam consectetur labore et eius laboriosam sequi in alias. Ipsa deleniti laborum iste porro expedita ea unde sunt. Quo magnam quod inventore quasi!",
+      "creator": {
+        "firstName": "Sohan",
+        "lastName": "undefined",
+        "id": "123"
+      },
+      "createdAt": "2023-12-04T09:08:00.908Z"
+    }
+  ],
+  "message": "Get Contact List Found",
+  "logout": false
+}

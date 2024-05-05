@@ -1,0 +1,247 @@
+{
+  "status": true,
+  "body": [
+    {
+      "id": 1,
+      "firstName": "Sohan",
+      "lastName": "Talukder",
+      "phone": "+8801912121212",
+      "email": "sohan@gmail.com",
+      "dealValue": "500",
+      "isBlocked": true,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 2,
+      "firstName": "",
+      "lastName": "",
+      "phone": "+8801874871236",
+      "email": "",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 3,
+      "firstName": "",
+      "lastName": "",
+      "phone": "",
+      "email": "jobaer@gmail.com",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": true
+    },
+    {
+      "id": 4,
+      "firstName": "Jobaer",
+      "lastName": "Ahmed",
+      "phone": "",
+      "email": "jobaer@gmail.com",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 5,
+      "firstName": "Mohammad",
+      "lastName": "Erfanul Islam Sifat Ahmed Khan",
+      "phone": "",
+      "email": "jobaer@gmail.com",
+      "dealValue": "700",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 6,
+      "firstName": "Sujoy",
+      "lastName": "undefined",
+      "phone": "+8801567869825",
+      "email": "",
+      "dealValue": "700",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 7,
+      "firstName": "Mohiuddin",
+      "lastName": "null",
+      "phone": "+8801912121212",
+      "email": "sohan@gmail.com",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 8,
+      "firstName": "",
+      "lastName": "",
+      "phone": "+8801874871236",
+      "email": "mithun@gmail.com",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 9,
+      "firstName": "",
+      "lastName": "",
+      "phone": "",
+      "email": "bijoy@gmail.com",
+      "dealValue": "500",
+      "isBlocked": true,
+      "isUnsubscribed": true
+    },
+    {
+      "id": 10,
+      "firstName": "Zahid",
+      "lastName": "Hasan",
+      "phone": "",
+      "email": "zahid@gmail.com",
+      "dealValue": "500",
+      "isBlocked": true,
+      "isUnsubscribed": true
+    },
+    {
+      "id": 11,
+      "firstName": "Atik",
+      "lastName": "undefined",
+      "phone": "",
+      "email": "jobaer@gmail.com",
+      "dealValue": "700",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 12,
+      "firstName": "null",
+      "lastName": "Riyad",
+      "phone": "+8801567869825",
+      "email": "",
+      "dealValue": "700",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 13,
+      "firstName": "Sohan",
+      "lastName": "Talukder",
+      "phone": "+8801912121212",
+      "email": "sohan@gmail.com",
+      "dealValue": "500",
+      "isBlocked": true,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 14,
+      "firstName": "",
+      "lastName": "",
+      "phone": "+8801874871236",
+      "email": "",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 15,
+      "firstName": "",
+      "lastName": "",
+      "phone": "",
+      "email": "jobaer@gmail.com",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": true
+    },
+    {
+      "id": 16,
+      "firstName": "Jobaer",
+      "lastName": "Ahmed",
+      "phone": "",
+      "email": "jobaer@gmail.com",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 17,
+      "firstName": "Mohammad",
+      "lastName": "Erfanul Islam Sifat Ahmed Khan",
+      "phone": "",
+      "email": "jobaer@gmail.com",
+      "dealValue": "700",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 18,
+      "firstName": "Sujoy",
+      "lastName": "undefined",
+      "phone": "+8801567869825",
+      "email": "",
+      "dealValue": "700",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 19,
+      "firstName": "Mohiuddin",
+      "lastName": "null",
+      "phone": "+8801912121212",
+      "email": "sohan@gmail.com",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 20,
+      "firstName": "",
+      "lastName": "",
+      "phone": "+8801874871236",
+      "email": "mithun@gmail.com",
+      "dealValue": "500",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 21,
+      "firstName": "",
+      "lastName": "",
+      "phone": "",
+      "email": "bijoy@gmail.com",
+      "dealValue": "500",
+      "isBlocked": true,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 22,
+      "firstName": "Zahid",
+      "lastName": "Hasan",
+      "phone": "",
+      "email": "zahid@gmail.com",
+      "dealValue": "500",
+      "isBlocked": true,
+      "isUnsubscribed": true
+    },
+    {
+      "id": 23,
+      "firstName": "Atik",
+      "lastName": "undefined",
+      "phone": "",
+      "email": "jobaer@gmail.com",
+      "dealValue": "700",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    },
+    {
+      "id": 24,
+      "firstName": "null",
+      "lastName": "Riyad",
+      "phone": "+8801567869825",
+      "email": "",
+      "dealValue": "700",
+      "isBlocked": false,
+      "isUnsubscribed": false
+    }
+  ],
+  "message": "Get Contact List Found",
+  "logout": false
+}

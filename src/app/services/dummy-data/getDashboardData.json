@@ -1,0 +1,27 @@
+{
+  "activity": {
+    "data": {
+      "count": {
+        "opened": 10,
+        "win": 20,
+        "lost": 30
+      },
+      "value": {
+        "opened": 1021,
+        "win": 121,
+        "lost": 12123
+      }
+    },
+    "success": true,
+    "message": ""
+  },
+  "task": {
+    "data": {
+      "opened": 0,
+      "win": 30,
+      "lost": 40
+    },
+    "success": true,
+    "message": ""
+  }
+}

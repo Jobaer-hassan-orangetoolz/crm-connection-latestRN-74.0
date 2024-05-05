@@ -1,0 +1,124 @@
+{
+    "status": true,
+    "body": [
+        {
+            "id": 1,
+            "callType": 1,
+            "contactId": 123123,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 2,
+            "callType": 2,
+            "contactId": 123124,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 3,
+            "callType": 3,
+            "contactId": 123125,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 4,
+            "callType": 4,
+            "contactId": 123126,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 5,
+            "callType": 2,
+            "contactId": 123124,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 6,
+            "callType": 3,
+            "contactId": 123125,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 7,
+            "callType": 4,
+            "contactId": 123126,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 8,
+            "callType": 3,
+            "contactId": 123125,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 9,
+            "callType": 4,
+            "contactId": 123126,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 10,
+            "callType": 3,
+            "contactId": 123125,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 11,
+            "callType": 4,
+            "contactId": 123126,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 12,
+            "callType": 4,
+            "contactId": 123126,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        },
+        {
+            "id": 13,
+            "callType": 4,
+            "contactId": 123126,
+            "firstName": "Jobaer",
+            "lastName": "hassan",
+            "contactNumber": "+15545683884",
+            "createdAt": "2023-12-04T09:08:00.908Z"
+        }
+    ],
+    "message": "get call history data",
+    "logout": false
+}

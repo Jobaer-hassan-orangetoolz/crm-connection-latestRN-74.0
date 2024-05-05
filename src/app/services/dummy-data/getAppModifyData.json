@@ -1,0 +1,13 @@
+{
+    "status": true,
+    "body": {
+      "messages": {},
+      "titles": {},
+      "buttons": "",
+      "placeholders": {},
+      "colors": {},
+      "config": {}
+    },
+    "message": "Get content modify data",
+    "logout": false
+}

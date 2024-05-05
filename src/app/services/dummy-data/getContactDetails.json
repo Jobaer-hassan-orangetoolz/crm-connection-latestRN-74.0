@@ -1,0 +1,158 @@
+{
+  "details": {
+    "id": 1,
+    "firstName": "Sohan",
+    "lastName": "Talukder",
+    "dealValue": 500,
+    "email": "sohan@gmail.com",
+    "emailIsValidate": false,
+    "phone": "+8801865748726",
+    "phoneIsValidate": false,
+    "address": "Road: #15, Faidabad",
+    "street": "Dhaka",
+    "state": "Dhaka",
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "zip": "1230",
+    "company": "Company name",
+    "leadSourceId": 1,
+    "leadSourceTitle": "Zapier",
+    "leadOwnerId": 1,
+    "leadOwnerTitle": "Zapier",
+    "additionalInformation": {
+      "emails": ["jobaer@gmail.com", "erfan@gmail.com"],
+      "numbers": ["+880187621212", "+91123123123123"]
+    },
+    "isBlocked": false,
+    "isUnsubscribed": false
+  },
+  "campaigns": [
+    {
+      "id": 1,
+      "title": "30% Sales"
+    },
+    {
+      "id": 2,
+      "title": "50% Sales"
+    }
+  ],
+  "pipeline": {
+    "totalDeal": 2,
+    "totalDealValue": 400
+  },
+  "tags": [
+    {
+      "id": 52281,
+      "name": "TEST",
+      "local_created_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_updated_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      }
+    },
+    {
+      "id": 55806,
+      "name": "TTTT2",
+      "local_created_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_updated_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      }
+    },
+    {
+      "id": 211382,
+      "name": "UNREACHABLE",
+      "local_created_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_updated_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      }
+    },
+    {
+      "id": 220551,
+      "name": "ACTIVE",
+      "local_created_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_updated_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      }
+    },
+    {
+      "id": 220552,
+      "name": "Most Like",
+      "local_created_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_updated_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      }
+    },
+    {
+      "id": 220553,
+      "name": "Test Test",
+      "local_created_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_updated_at": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      }
+    }
+  ],
+  "customField": [
+    {
+      "name": "Date Of Birth",
+      "value": "04-10-1999",
+      "id": 1
+    },
+    {
+      "name": "Website",
+      "value": "www.sohantalukder.com",
+      "id": 2
+    },
+    {
+      "name": "Others",
+      "value": "Lorem Ipsum",
+      "id": 3
+    }
+  ]
+}

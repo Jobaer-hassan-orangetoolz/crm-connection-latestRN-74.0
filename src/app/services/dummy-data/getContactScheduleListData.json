@@ -1,0 +1,996 @@
+{
+  "body": [
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    },
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    },
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    },
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    },
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    },
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    },
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    },
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    },
+    {
+      "id": 392305,
+      "broadcast_id": 15144,
+      "team_id": 1,
+      "user_id": 1,
+      "contact_id": 33885893,
+      "schedule_time": "2100-01-01 22:02:00",
+      "status": 0,
+      "created_at": "2023-12-05 09:04:07",
+      "updated_at": "2023-12-05 09:04:07",
+      "error_message": null,
+      "contacted": 0,
+      "timeline_id": null,
+      "contact_email_id": null,
+      "broadcast": {
+        "id": 15144,
+        "agency_id": 1,
+        "team_id": 1,
+        "user_id": 1,
+        "assigned_from": 2,
+        "message_type": 4,
+        "subject": "Hello World",
+        "message": "Hello Wordld<br />\n<div class=\"user_signature_content\">\n<div>\n<div>\n<p><img src=\"https://s3.us-east-1.amazonaws.com/pypepro/user/1/eKI6awKObVbiNwG13Y4vmkGxHkjRFfVvMYVOlu1m.png\" alt=\"\" width=\"101\" height=\"101\" /></p>\n<h1><span style=\"background-color: #ffffff;\">Orange Toolz</span></h1>\n<h4><em><span style=\"background-color: #ffffff;\">Digital Agency of My Offer 360 Degree</span></em></h4>\n<p>Sector 10, Uttara, Dhaka 1230, Bangladesh</p>\n</div>\n</div>\n</div>",
+        "gif_path": "",
+        "file_path": "",
+        "schedule_time": "2100-01-01 15:02:00",
+        "file_type": null,
+        "status": 3,
+        "live": 1,
+        "created_at": "2023-12-05 09:04:07",
+        "updated_at": "2023-12-05 09:04:07",
+        "from_number": null,
+        "from_email": null,
+        "email_video_id": null,
+        "error_message": null,
+        "timezone": null,
+        "total_contacted": 0,
+        "attached": null,
+        "file_url": null,
+        "gift_sku_id": null,
+        "product_id": null,
+        "card_size": null,
+        "gift_handling_fee": null,
+        "gift_price": null,
+        "reschedule_due_to_ratelimit": 0,
+        "template_id": null,
+        "template_category_id": null,
+        "card_owner": 2
+      },
+      "local_last_communication": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_email_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_made": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_call_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_sent": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_last_text_received": {
+        "date": null,
+        "time": null,
+        "for_human": null,
+        "date_time": null
+      },
+      "local_created_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_updated_at": {
+        "date": "2023-12-05",
+        "time": "09:04:07",
+        "for_human": "34 minutes ago",
+        "date_time": "2023-12-05 09:04:07"
+      },
+      "local_schedule_time": {
+        "date": "2100-01-01",
+        "time": "22:02:00",
+        "for_human": "76 years from now",
+        "date_time": "2100-01-01 22:02:00"
+      }
+    }
+  ],
+  "success": true,
+  "message": ""
+}
