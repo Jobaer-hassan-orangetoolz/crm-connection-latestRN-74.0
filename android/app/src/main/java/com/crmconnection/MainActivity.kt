@@ -49,7 +49,7 @@ override fun onDestroy() {
   activityProxy.onDestroy()
   super.onDestroy()
 }
-
+// @TODO have to implement specific permissions after login.(notification, record, blutooth)
 override fun onNewIntent(intent: Intent?) {
   super.onNewIntent(intent)
   activityProxy.onNewIntent(intent)
