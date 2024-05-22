@@ -72,6 +72,9 @@ const useDashboard = () => {
       const payload = {page: 1, perPage: 3, type: 'today'};
       dispatch(isGettingTask(payload));
     }
+    // NativeModules.PermissionModule.requestPermissions((data: string) => {
+    //   console.log('Received data from Kotlin:', data);
+    // });
   }, []);
   useEffect(() => {
     if (isMount) {
