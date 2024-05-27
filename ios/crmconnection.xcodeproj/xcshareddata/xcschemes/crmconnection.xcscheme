@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "crmconnection.app"
-               BlueprintName = "crmconnection"
-               ReferencedContainer = "container:crmconnection.xcodeproj">
+               BuildableName = "kindcrm.app"
+               BlueprintName = "kindcrm"
+               ReferencedContainer = "container:kindcrm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
                BuildableName = "crmconnectionTests.xctest"
                BlueprintName = "crmconnectionTests"
-               ReferencedContainer = "container:crmconnection.xcodeproj">
+               ReferencedContainer = "container:kindcrm.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "crmconnection.app"
-            BlueprintName = "crmconnection"
-            ReferencedContainer = "container:crmconnection.xcodeproj">
+            BuildableName = "kindcrm.app"
+            BlueprintName = "kindcrm"
+            ReferencedContainer = "container:kindcrm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "crmconnection.app"
-            BlueprintName = "crmconnection"
-            ReferencedContainer = "container:crmconnection.xcodeproj">
+            BuildableName = "kindcrm.app"
+            BlueprintName = "kindcrm"
+            ReferencedContainer = "container:kindcrm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

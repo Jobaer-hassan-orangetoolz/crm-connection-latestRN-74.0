@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.crmconnection",
+  "applicationId": "com.kindcrm",
   "variantName": "release",
   "elements": [
     {
