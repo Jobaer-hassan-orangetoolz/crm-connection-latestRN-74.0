@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "878200859542",
-    "project_id": "kindcrm-96745",
-    "storage_bucket": "kindcrm-96745.appspot.com"
+    "project_number": "1026542238635",
+    "project_id": "xtropia-demand-generation",
+    "storage_bucket": "xtropia-demand-generation.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:878200859542:android:e296030743a716aeef4bb7",
+        "mobilesdk_app_id": "1:1026542238635:android:2d9b12e36c9ec46dc5f0ee",
         "android_client_info": {
-          "package_name": "com.kindcrm"
+          "package_name": "com.xtropiademandgeneration"
         }
       },
       "oauth_client": [
         {
-          "client_id": "878200859542-sudshg7s3sk6qbpa2k8bu8hcnpjp1sad.apps.googleusercontent.com",
+          "client_id": "1026542238635-o39tjegam30g6lfeluq8pdt6kueauijf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCKodhj7HIW2yMABaOE4Iehe8fPAxge27Y"
+          "current_key": "AIzaSyCeVX8pGLeZ1V61Xh19UD3f47pV-wep6tI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "878200859542-sudshg7s3sk6qbpa2k8bu8hcnpjp1sad.apps.googleusercontent.com",
+              "client_id": "1026542238635-o39tjegam30g6lfeluq8pdt6kueauijf.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "878200859542-tq8cj4uvishn7cbp67pe65fk3l9rva6c.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "org.reactjs.native.example.KindCRM"
-              }
             }
           ]
         }

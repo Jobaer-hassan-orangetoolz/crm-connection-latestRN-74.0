@@ -75,13 +75,13 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.kindcrm"
+    namespace "com.xtropiademandgeneration"
     defaultConfig {
-        applicationId "com.kindcrm"
+        applicationId "com.xtropiademandgeneration"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 5
-        versionName "3.21"
+        versionCode 3
+        versionName "2.1"
     }
     signingConfigs {
         debug {
