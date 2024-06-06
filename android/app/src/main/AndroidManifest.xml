@@ -20,9 +20,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-   <!-- <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" /> -->
    <!-- for twilio voice -->
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -52,6 +50,13 @@
 
       <!-- Twilio Voice -->
       <!-- [START fcm_listener] -->
+<!--        <service-->
+<!--            android:name="com.twiliovoicereactnative.VoiceService"-->
+<!--            android:exported="false" />-->
+<!--        <service-->
+<!--            android:name="com.twiliovoicereactnative.MyMicrophoneService"-->
+<!--            android:foregroundServiceType="microphone"-->
+<!--            android:exported="false" />-->
       <service
         android:name="com.twiliovoicereactnative.VoiceFirebaseMessagingService"
         android:stopWithTask="false"
@@ -60,30 +65,25 @@
           <action android:name="com.google.firebase.MESSAGING_EVENT" />
         </intent-filter>
       </service>
-      <!-- <service
-        android:name=".MyService"
-        android:foregroundServiceType="location"
-        android:exported="false">
-      </service> -->
-      <service
-        android:enabled="true"
-        android:name="com.twiliovoicereactnative.IncomingCallNotificationService"
-        android:foregroundServiceType="microphone"
-        android:exported="true">
-        <intent-filter>
-          <action android:name="ACTION_ACCEPT" />
-          <action android:name="ACTION_REJECT" />
-        </intent-filter>
-      </service>
-       <activity
-        android:name="com.twiliovoicereactnative.NotificationProxyActivity"
-        android:parentActivityName=".MainActivity"
-        android:noHistory="true"
-        android:excludeFromRecents="true"
-        android:taskAffinity=""
-        android:launchMode="singleTask"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar"
-        android:exported="true" />
+<!--      <service-->
+<!--        android:enabled="true"-->
+<!--        android:name="com.twiliovoicereactnative.IncomingCallNotificationService"-->
+<!--        android:foregroundServiceType="microphone"-->
+<!--        android:exported="true">-->
+<!--        <intent-filter>-->
+<!--          <action android:name="ACTION_ACCEPT" />-->
+<!--          <action android:name="ACTION_REJECT" />-->
+<!--        </intent-filter>-->
+<!--      </service>-->
+<!--       <activity-->
+<!--        android:name="com.twiliovoicereactnative.NotificationProxyActivity"-->
+<!--        android:parentActivityName=".MainActivity"-->
+<!--        android:noHistory="true"-->
+<!--        android:excludeFromRecents="true"-->
+<!--        android:taskAffinity=""-->
+<!--        android:launchMode="singleTask"-->
+<!--        android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+<!--        android:exported="true" />-->
 
       <meta-data  android:name="com.twiliovoicereactnative.*" android:resource="@mipmap/ic_notification" />
     </application>

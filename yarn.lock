@@ -2085,10 +2085,10 @@
   resolved "https://registry.npmjs.org/@twilio/voice-errors/-/voice-errors-1.4.0.tgz"
   integrity sha512-7BCg9MPz+KQ0JJ6Rl5W3Zw3E+i3Tt77VZw3/2i3Z+IPZITmCOQLu1nKx/0Nlj505Xtfr7eY9Mcern5PfIoBW0w==
 
-"@twilio/voice-react-native-sdk@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@twilio/voice-react-native-sdk/-/voice-react-native-sdk-1.0.0.tgz"
-  integrity sha512-t2hB+4GMJvi6d+6UVUsPVY60lv8rNamJJ3C41ibYKDRIdGsQgeFvGsMPUrm5RlOU4420iSWecCO4wVdJPylVSg==
+"@twilio/voice-react-native-sdk@1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.npmjs.org/@twilio/voice-react-native-sdk/-/voice-react-native-sdk-1.0.0-beta.4.tgz"
+  integrity sha512-+J+jQmRv+c1GJmZhgHFPWolCPgmgKSJ9J5K8W+CHdENxkFNZ1hmUEpg9t+cKzbPxTVPvmBtniHwgspFLVjXupg==
   dependencies:
     "@twilio/voice-errors" "^1.2.2"
     eventemitter3 "^4.0.7"

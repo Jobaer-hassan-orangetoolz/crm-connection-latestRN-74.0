@@ -1,10 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import {useEffect, useState} from 'react';
-import {
-  dashboardStates,
-  taskStates,
-  userStates,
-} from '../../../states/allSelector.state';
+import {dashboardStates, userStates} from '../../../states/allSelector.state';
 import {
   customUseDispatch,
   customUseSelector,
