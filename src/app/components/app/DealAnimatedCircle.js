@@ -116,7 +116,7 @@ const CustomCircleAnimation = ({
       stroke={item.color}
       strokeWidth={strokeWidth}
       strokeDashoffset={from}
-      // strokeDasharray={strokeDasharray}
+      strokeDasharray={strokeDasharray}
     />
   );
 };

@@ -12,6 +12,7 @@ const EmailActionField: React.FC<any> = ({
   componentProps,
   disabled = false,
   disableIcon = false,
+  textStyles = {},
 }) => {
   return (
     <View style={[styles.container, containerStyle]}>
@@ -23,6 +24,7 @@ const EmailActionField: React.FC<any> = ({
         componentProps={componentProps}
         disabled={disabled}
         disableIcon={disableIcon}
+        textStyles={textStyles}
       />
     </View>
   );
@@ -39,11 +41,6 @@ const styles = StyleSheet.create({
     flexShrink: 1,
   },
   text: {...typographies.bodySmallBold, color: colors.gray4},
-  dropDown: {
-    flex: 0,
-  },
-  input: {
-    flex: 1,
-    height: 10,
-  },
+  dropDown: {flex: 0},
+  input: {flex: 1, height: 10},
 });

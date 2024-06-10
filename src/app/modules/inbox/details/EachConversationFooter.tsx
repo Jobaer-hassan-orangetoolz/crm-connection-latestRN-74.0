@@ -2,12 +2,18 @@ import React, {useState} from 'react';
 import EachMessageFooter from './EachMessageFooter.module';
 import BlockMessage from './BlockMessage.module';
 import SmsSendShort from './SmsSendShort.module';
-import {isEmpty} from '../../../utilities/helper.utility';
-import {Animated, KeyboardAvoidingView, StyleSheet} from 'react-native';
+import {
+  Animated,
+  KeyboardAvoidingView,
+  Platform,
+  StyleSheet,
+} from 'react-native';
 import {colors} from '../../../assets/styles/colors.style.asset';
-import {contactDetails} from '../../../services/models/InboxThread.model';
+import InboxThreadModel, {
+  contactDetails,
+} from '../../../services/models/InboxThread.model';
 
-const EachConversationFooter = ({id, type, number}: any) => {
+const EachConversationFooter = React.memo(({id, type, number}: any) => {
   const [showSmsSend, setShowSmsSend] = useState(false);
   const toggleSmsButton = () => {
     setShowSmsSend(!showSmsSend);
@@ -15,36 +21,35 @@ const EachConversationFooter = ({id, type, number}: any) => {
   if (contactDetails?.value?.isBlock) {
     return <BlockMessage />;
   }
-  if (showSmsSend || type === 'sms') {
-    if (isEmpty(type) && showSmsSend) {
-      return (
-        <SmsSendShort
-          handleSms={toggleSmsButton}
-          contactId={id}
-          number={number}
-        />
-      );
-    }
-    if (type === 'sms' && !showSmsSend) {
-      return (
-        <SmsSendShort
-          handleSms={toggleSmsButton}
-          contactId={id}
-          number={number}
-        />
-      );
-    }
+  if (
+    (type === 'sms' ||
+      type === InboxThreadModel.messageType.sms ||
+      type === InboxThreadModel.messageType.call ||
+      type === InboxThreadModel.messageType.email ||
+      type === 'call' ||
+      type === 'email') &&
+    showSmsSend
+  ) {
+    return (
+      <SmsSendShort
+        handleSms={toggleSmsButton}
+        contactId={id}
+        number={number}
+      />
+    );
   }
   //have to try animation here below.
   return (
-    <KeyboardAvoidingView>
+    <KeyboardAvoidingView
+      keyboardVerticalOffset={64}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <Animated.View
         style={[styles.footer, showSmsSend ? styles.noBorder : {}]}>
         <EachMessageFooter handleSms={toggleSmsButton} contactId={id} />
       </Animated.View>
     </KeyboardAvoidingView>
   );
-};
+});
 
 export default EachConversationFooter;
 const styles = StyleSheet.create({

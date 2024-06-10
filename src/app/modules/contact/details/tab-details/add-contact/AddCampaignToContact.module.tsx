@@ -87,6 +87,7 @@ const AddCampaignToContact: React.FC = ({contactId}: any) => {
       <HeaderSearch
         leftIcon={true}
         title="Add Campaign To Contact"
+        leftIconHandler={() => global.showBottomSheet({flag: false})}
         handleChange={text => {
           setSearch(text);
         }}

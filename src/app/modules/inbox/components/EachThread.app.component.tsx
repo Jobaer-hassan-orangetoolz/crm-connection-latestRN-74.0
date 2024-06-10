@@ -33,7 +33,7 @@ interface EachThreadProps {
 const EachThread: React.FC<EachThreadProps> = ({item, style, index}) => {
   const navigation = useCustomNavigation<any>();
   const {
-    messageType,
+    messageType = 1,
     message,
     subject,
     contactInfo: {firstName, lastName, number, isFavourite, id, email} = {
@@ -45,7 +45,7 @@ const EachThread: React.FC<EachThreadProps> = ({item, style, index}) => {
       email: '',
     },
     lastCommunicatedAt,
-    isRead: seen,
+    isRead: seen = false,
   } = item || {};
   const handlePress = () => {
     global.showBottomSheet({
@@ -55,8 +55,8 @@ const EachThread: React.FC<EachThreadProps> = ({item, style, index}) => {
         index: index,
         contact_id: id,
         isRead: item?.isRead,
-        isFavourite: item?.contactInfo.isFavourite,
-        isArchived: item?.contactInfo.isArchived,
+        isFavourite: item?.contactInfo?.isFavourite,
+        isArchived: item?.contactInfo?.isArchived,
       },
     });
   };
@@ -86,8 +86,9 @@ const EachThread: React.FC<EachThreadProps> = ({item, style, index}) => {
       name: getName(),
       number: number,
       isRead: item?.isRead,
-      isFavourite: item?.contactInfo.isFavourite,
-      isArchived: item?.contactInfo.isArchived,
+      isFavourite: item?.contactInfo?.isFavourite,
+      isArchived: item?.contactInfo?.isArchived,
+      type: item?.messageType,
     });
     if (!seen) {
       dispatch(
@@ -99,8 +100,8 @@ const EachThread: React.FC<EachThreadProps> = ({item, style, index}) => {
       );
     }
   };
-  const getName = () => {
-    let title = '';
+  const getName = (): string | undefined => {
+    let title: string | null | undefined = '';
     if (!isEmpty(firstName) && !isEmpty(lastName)) {
       title = firstName + ' ' + lastName;
     } else if (!isEmpty(firstName)) {
@@ -114,7 +115,7 @@ const EachThread: React.FC<EachThreadProps> = ({item, style, index}) => {
         title = number;
       }
     }
-    return title.trim();
+    return title?.trim();
   };
   const getMessage = () => {
     if (messageType === inboxThreadModel.messageType.email) {
@@ -151,7 +152,12 @@ const EachThread: React.FC<EachThreadProps> = ({item, style, index}) => {
                 alignSelf: 'center',
               },
             ]}>
-            {getAvatarText(firstName, lastName, item.contactInfo.email, number)}
+            {getAvatarText(
+              firstName,
+              lastName,
+              item?.contactInfo?.email,
+              number,
+            )}
           </Text>
         </View>
         {renderIcon(messageType)}
@@ -163,7 +169,7 @@ const EachThread: React.FC<EachThreadProps> = ({item, style, index}) => {
             styles.nameText,
           ]}
           numberOfLines={1}>
-          {formatPhoneNumber(getName())}
+          {formatPhoneNumber(getName() || '')}
         </Text>
         <Text
           style={[

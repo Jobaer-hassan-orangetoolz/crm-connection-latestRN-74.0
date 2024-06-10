@@ -15,6 +15,7 @@ import {screens} from '../../../routes/routeName.route';
 import {customUseDispatch} from '../../../packages/redux.package';
 import {addCampaignToContact} from '../../../states/features/contact/aboutContact.slice';
 import {aboutContactPipelineFormatter} from '../../../services/formatter/contactPipeline.formatter';
+import {titles} from '../../../assets/js/titles.message';
 
 const useAddDeal = ({
   edit,
@@ -29,9 +30,9 @@ const useAddDeal = ({
 }: useAddDealInterface) => {
   const navigation = useCustomNavigation<any>();
   const [values, setValues] = useState<useAddDealStates>({
-    stage: stage?.stage,
-    stageId: stage?.id,
-    pipeline: pipeline?.title,
+    stage: stage?.stage || '',
+    stageId: stage?.id || -1,
+    pipeline: pipeline?.title || '',
     pipelineId: pipeline?.pipelineId,
     name: deal?.name,
     number: deal?.number,
@@ -76,7 +77,7 @@ const useAddDeal = ({
       default:
         setValues((prev: any) => ({
           ...prev,
-          [name]: value,
+          [name as any]: value,
         }));
         return;
     }
@@ -128,6 +129,13 @@ const useAddDeal = ({
               }),
             ),
           ); //for about contact slice
+          return showAlertWithOneAction({
+            title: titles.done,
+            body: 'Deal Added Successfully',
+            onPressAction: () => {
+              navigation.goBack();
+            },
+          });
         }
         const successPayload = {
           ...values,

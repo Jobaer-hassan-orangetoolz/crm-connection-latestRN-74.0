@@ -6,6 +6,10 @@ class InboxModel {
     unRead: 0,
     read: 1,
   };
+  emailProvider = {
+    sandbox: 0,
+    nylas: 2,
+  };
   messageType = {
     sms: 1,
     mms: 2,

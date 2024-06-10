@@ -43,7 +43,7 @@ const useProfile = () => {
       const pathArray = uri.split('/');
       return pathArray[pathArray.length - 1];
     }
-    if (res.size / 1000000 <= 0.5 && isSupportedFormat) {
+    if (res.size / 1000000 <= 2 && isSupportedFormat) {
       const formData = new FormData();
       formData.append('image', {
         ...res,

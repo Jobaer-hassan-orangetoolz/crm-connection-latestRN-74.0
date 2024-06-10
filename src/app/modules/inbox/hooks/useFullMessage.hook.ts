@@ -7,15 +7,17 @@ import {quickReplyStates} from '../../../states/allSelector.state';
 import {getUserVirtualNumber} from '../../../states/features/user/user.slice';
 import {
   checkObjectEmpty,
+  formatDate,
   isEmpty,
   showAlertWithOneAction,
 } from '../../../utilities/helper.utility';
 import inboxApiHelper from '../../../services/api/helper/inboxApi.helper';
 import {useCustomNavigation} from '../../../packages/navigation.package';
-import {storeNewMessageInConversation} from '../../../states/features/inbox/eachMessage.slice';
-import inboxThreadModel from '../../../services/models/InboxThread.model';
 import {messages} from '../../../assets/js/messages.message';
 import {titles} from '../../../assets/js/titles.message';
+import {userLocalTimezone} from '../../../services/models/_Timezone.modal';
+import InboxThreadModel from '../../../services/models/InboxThread.model';
+import {storeNewMessageInConversation} from '../../../states/features/inbox/eachMessage.slice';
 
 const useFullMessage = ({contactId, message, fromNumber}: any) => {
   const {type} = customUseSelector(quickReplyStates);
@@ -76,20 +78,36 @@ const useFullMessage = ({contactId, message, fromNumber}: any) => {
       virtual_number_id: vn.id,
       virtual_number: vn.number,
       schedule_type: scheduleData.current.flag === true ? 2 : 1,
-      time: scheduleData.current.time,
-      date: scheduleData.current.date,
+      time: formatDate(
+        scheduleData.current.time,
+        'HH:mm',
+        userLocalTimezone.timezone,
+        false,
+      ),
+      date: formatDate(scheduleData.current.time, 'YYYY-MM-DD'),
       template: title,
       save_as_template: templateFlag,
       template_title: title,
     };
     const result = await inboxApiHelper.sendSms(_payload);
     if (result.status) {
-      navigation.goBack();
-      dispatch(
-        storeNewMessageInConversation(
-          inboxThreadModel.outgoingConversation({item: result.body}),
-        ),
-      );
+      if (!scheduleData.current.flag) {
+        dispatch(
+          storeNewMessageInConversation(
+            InboxThreadModel.outgoingConversation({item: result.body}),
+          ),
+        );
+        navigation.goBack();
+      } else {
+        return showAlertWithOneAction({
+          title: titles.sendSuccess,
+          body: messages.scheduleMsgSuccess,
+          onPressAction: () => {
+            global.showBottomSheet({flag: false});
+            navigation.goBack();
+          },
+        });
+      }
       setIsLoading(false);
     } else {
       setIsLoading(false);
@@ -105,6 +123,10 @@ const useFullMessage = ({contactId, message, fromNumber}: any) => {
           body: messages.personalizedTemplateEmpty,
         });
       }
+      return showAlertWithOneAction({
+        title: messages.wentWrong,
+        body: result.message,
+      });
     }
   };
   const messageValidation = () => {

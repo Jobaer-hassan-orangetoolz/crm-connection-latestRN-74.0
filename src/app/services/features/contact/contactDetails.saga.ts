@@ -25,7 +25,7 @@ function* getContactDetails() {
     getContactDetailsSaga,
   );
   yield customTakeEvery(
-    `${sliceName.contactDetailsSlice}/refreshingContactDetails`,
+    `${sliceName.aboutContactSlice}/refreshingContactDetails`,
     getContactDetailsSaga,
   );
 }

@@ -34,7 +34,7 @@ const AddNote: React.FC<{
         title={titles.addNote}
         leftIcon={<LeftArrowIcon />}
         right={buttons.save}
-        rightHandlerDisable={false}
+        rightHandlerDisable={contactInfo.id ? false : true}
         rightHandler={handleSave}
         isAnimating={false}
       />
@@ -43,7 +43,7 @@ const AddNote: React.FC<{
           <Text style={[typographies.bodyXS, styles.time]}>
             {momentTimezone()
               .tz(userLocalTimezone.timezone)
-              .format('DD MMM, YYYY')}
+              .format('MMM DD, YYYY')}
           </Text>
           {!id && (
             <CustomDropdown

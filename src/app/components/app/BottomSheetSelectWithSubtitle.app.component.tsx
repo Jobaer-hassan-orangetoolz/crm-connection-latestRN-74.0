@@ -93,7 +93,9 @@ const EachOption = ({
       }}>
       <View>
         {subtitleField && (
-          <Text style={typographies.bodyMediumBold}>{item[subtitleField]}</Text>
+          <Text style={typographies.bodyMediumBold}>
+            {titleField === 'FULL__DATA' ? item : item[titleField]}
+          </Text>
         )}
         <Text
           style={[

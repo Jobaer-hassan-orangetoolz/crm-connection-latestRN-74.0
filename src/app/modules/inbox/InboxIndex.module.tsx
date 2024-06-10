@@ -93,11 +93,11 @@ const InboxIndex = () => {
             )
           }
           ListFooterComponent={
-            gettingMore && (
+            gettingMore ? (
               <View style={{height: rs(30), ...customPadding(20, 0, 20, 0)}}>
                 <ActivityIndicator color={colors.primary} />
               </View>
-            )
+            ) : undefined
           }
         />
       </View>

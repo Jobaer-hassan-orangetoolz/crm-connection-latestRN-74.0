@@ -124,6 +124,8 @@ export const titles = {
   noVirtualNumber: 'No Virtual number found',
   todaysActivities: "Todays's Activities",
   unreadMsg: 'Unread Messages',
+  sendSuccess: 'Sent Successful',
+  details: 'Details',
 };
 
 export const tabTitles = {

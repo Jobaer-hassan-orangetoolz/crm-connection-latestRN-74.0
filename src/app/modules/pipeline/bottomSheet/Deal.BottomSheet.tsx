@@ -79,6 +79,14 @@ const DealBottomSheet: React.FC<{
             <TouchableOpacity
               activeOpacity={0.5}
               onPress={() => {
+                navigation.navigate(screens.contactDetails, {id: contactId});
+                global.showBottomSheet({flag: false});
+              }}>
+              <Text style={typographies.bodyMediumBold}>{titles.details}</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              activeOpacity={0.5}
+              onPress={() => {
                 navigation.navigate(screens.addDeal, {
                   deal: item,
                   stage,
@@ -176,7 +184,7 @@ const DealBottomSheet: React.FC<{
             {titles.dealClose}{' '}
           </Text>
           <Text style={[typographies.bodySmall, {color: colors.gray0}]}>
-            {formatDate(closeDate, 'DD MMMM, YYYY')}
+            {formatDate(closeDate, 'MMM DD, YYYY')}
           </Text>
         </View>
       )}

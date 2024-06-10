@@ -8,9 +8,9 @@ import {globalStyles} from '../../../assets/styles/global.style.asset';
 import {typographies} from '../../../assets/styles/typographies.style.asset';
 import BottomSheetSelect from '../../../components/app/BottomSheetSelect.app.component';
 import {titles} from '../../../assets/js/titles.message';
-import {config} from '../../../../config';
 import {isEmpty} from '../../../utilities/helper.utility';
 import usePipeline from '../hook/usePipeline.hook';
+import {config} from '../../../../config';
 
 const StageTopHeader: React.FC<{
   isLoading: boolean;
@@ -63,29 +63,25 @@ const StageTopHeader: React.FC<{
               {titles.pipelineValue}
             </Text>
             <Text style={styles.dealValue}>
-              {config.currencySymbol}
-              {dealStats.total_deals || 0}
+              {config.currencySymbol + dealStats.total_deals || 0}
             </Text>
           </View>
           <View style={styles.valueWrp}>
             <View>
               <Text style={styles.valueStatsTitle}>{titles.open}</Text>
               <Text style={typographies.bodyMediumBold}>
-                {config.currencySymbol}
                 {dealStats.active || 0}
               </Text>
             </View>
             <View>
               <Text style={styles.valueStatsTitle}>{titles.won}</Text>
               <Text style={typographies.bodyMediumBold}>
-                {config.currencySymbol}
                 {dealStats.win || 0}
               </Text>
             </View>
             <View>
               <Text style={styles.valueStatsTitle}>{titles.lost}</Text>
               <Text style={typographies.bodyMediumBold}>
-                {config.currencySymbol}
                 {dealStats.lost || 0}
               </Text>
             </View>

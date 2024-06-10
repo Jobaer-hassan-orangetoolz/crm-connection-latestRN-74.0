@@ -21,8 +21,6 @@ import {
 } from '../../utilities/helper.utility';
 import pipelineApiHelper from '../../services/api/helper/pipelineApi.helper';
 import {stageInterface} from '../../services/formatter/stage.formatter';
-import {useCustomNavigation} from '../../packages/navigation.package';
-import {screens} from '../../routes/routeName.route';
 
 const StageDeal: React.FC<{
   index: number;
@@ -38,7 +36,6 @@ const StageDeal: React.FC<{
     bgColor,
     number,
     status,
-    contactId,
   } = stageDealFormatter(item);
   const handlePress = (value: number) => {
     const updateStatus = value === 3 ? 0 : 1;
@@ -49,7 +46,6 @@ const StageDeal: React.FC<{
       status: updateStatus,
     });
   };
-  const navigation = useCustomNavigation<any>();
   return (
     <TouchableOpacity
       activeOpacity={0.5}
@@ -68,7 +64,7 @@ const StageDeal: React.FC<{
         });
       }}
       style={[stageDealStyles.container, {...customPadding(12, 20, 12, 20)}]}>
-      <View style={stageDealStyles.leftContainer}>
+      <View style={stageDealStyles.rightContainer}>
         <ContactImage
           name={name}
           bg={getHexaOpacityColorCode(bgColor, 0.1)}
@@ -95,13 +91,9 @@ const StageDeal: React.FC<{
           ]}>
           {(pipelineModal as any)[status]}
         </Text>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate(screens.contactDetails, {id: contactId});
-          }}
-          style={{...customPadding(2, 2, 2, 2)}}>
+        <View style={{...customPadding(2, 2, 2, 2)}}>
           <RightArrow />
-        </TouchableOpacity>
+        </View>
       </View>
     </TouchableOpacity>
   );
@@ -116,11 +108,17 @@ export const stageDealStyles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  leftContainer: {
+  rightContainer: {
     flexDirection: 'row',
     gap: 12,
     alignItems: 'center',
     flexShrink: 1,
+  },
+  leftContainer: {
+    flexDirection: 'row',
+    gap: 12,
+    justifyContent: 'flex-end',
+    flexGrow: 1,
   },
   text: {...customPadding(4, 12, 4, 12), borderWidth: 1, borderRadius: 100},
   open: {

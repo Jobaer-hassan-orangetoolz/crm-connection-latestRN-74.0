@@ -6,15 +6,19 @@ import {
 } from '../../../packages/redux.package';
 import {authStates, quickReplyStates} from '../../../states/allSelector.state';
 import {
+  formatDate,
   isEmpty,
   showAlertWithOneAction,
 } from '../../../utilities/helper.utility';
 import inboxApiHelper from '../../../services/api/helper/inboxApi.helper';
-import {storeNewMessageInConversation} from '../../../states/features/inbox/eachMessage.slice';
-import inboxThreadModel from '../../../services/models/InboxThread.model';
 import {useCustomNavigation} from '../../../packages/navigation.package';
+import InboxThreadModel from '../../../services/models/InboxThread.model';
+import {userLocalTimezone} from '../../../services/models/_Timezone.modal';
+import {titles} from '../../../assets/js/titles.message';
+import {messages} from '../../../assets/js/messages.message';
+import {storeNewMessageInConversation} from '../../../states/features/inbox/eachMessage.slice';
 
-const useNewEmail = ({contactId, from}: any) => {
+const useNewEmail = ({contactId}: any) => {
   const {type} = customUseSelector(quickReplyStates);
   const [subjectText, setSubjectText] = useState('');
   const [messageText, setMessageText] = useState('');
@@ -27,10 +31,15 @@ const useNewEmail = ({contactId, from}: any) => {
   const [cursorPosition, setCursorPosition] = useState<any>({});
   const [fromEmail, setFromEmail] = useState<any>(null); //userInfo.defaultEmail
   const [isLoading, setIsLoading] = useState<any>(false);
-  const dispatch = customUseDispatch();
   const navigation = useCustomNavigation();
+  const dispatch = customUseDispatch();
   const handleFromEmail = (value: any) => {
-    setFromEmail(value.campaignEmail);
+    setFromEmail(
+      userInfo &&
+        userInfo.email_provider === InboxThreadModel.emailProvider.nylas
+        ? value
+        : value.campaignEmail,
+    );
   };
   const onChangeText = (text: string, name: string) => {
     if (name === 'message') {
@@ -69,33 +78,57 @@ const useNewEmail = ({contactId, from}: any) => {
     }
   };
   const handleSubmit = async () => {
-    setIsLoading(true);
-    const _payload = {
-      message: messageText,
-      subject: subjectText,
-      email: fromEmail,
-      contact_id: contactId,
-      schedule_type: scheduleData.current.flag === true ? 2 : 1,
-      time: scheduleData.current.time,
-      date: scheduleData.current.date,
-      saveTemplateTitle: templateFlag,
-      template_title: title,
-      save_as_template: templateFlag,
-    };
-    const result = await inboxApiHelper.sendEmail(_payload);
-    if (result.status) {
-      navigation.goBack();
-      dispatch(
-        storeNewMessageInConversation(
-          inboxThreadModel.outgoingConversation({item: result.body}),
-        ),
-      );
-      setIsLoading(false);
+    if (fromEmail) {
+      setIsLoading(true);
+      const _payload = {
+        message: messageText,
+        subject: subjectText,
+        email: fromEmail,
+        contact_id: contactId,
+        schedule_type: scheduleData.current.flag === true ? 2 : 1,
+        time:
+          formatDate(
+            scheduleData.current.time,
+            'HH:mm',
+            userLocalTimezone.timezone,
+            false,
+          ) || '',
+        date: formatDate(scheduleData.current.time, 'YYYY-MM-DD') || '',
+        saveTemplateTitle: templateFlag,
+        template_title: title,
+        save_as_template: templateFlag,
+      };
+      const result = await inboxApiHelper.sendEmail(_payload);
+      if (result.status) {
+        if (!scheduleData.current.flag) {
+          dispatch(
+            storeNewMessageInConversation(
+              InboxThreadModel.outgoingConversation({item: result.body}),
+            ),
+          );
+          navigation.goBack();
+        } else {
+          return showAlertWithOneAction({
+            title: titles.sendSuccess,
+            body: messages.scheduleEmailSuccess,
+            onPressAction: () => {
+              global.showBottomSheet({flag: false});
+              navigation.goBack();
+            },
+          });
+        }
+        setIsLoading(false);
+      } else {
+        setIsLoading(false);
+        showAlertWithOneAction({
+          title: messages.wentWrong,
+          body: result.message,
+        });
+      }
     } else {
-      setIsLoading(false);
       showAlertWithOneAction({
-        title: 'Something error',
-        body: 'There have some error with Email',
+        title: 'Invalid',
+        body: 'From email select first!',
       });
     }
   };
@@ -109,8 +142,11 @@ const useNewEmail = ({contactId, from}: any) => {
     return true;
   };
   useEffect(() => {
-    if (userInfo && userInfo.isEmailProviderNylas) {
-      setFromEmail(userInfo?.connectedEmail || null);
+    if (
+      userInfo &&
+      userInfo.email_provider === InboxThreadModel.emailProvider.nylas
+    ) {
+      setFromEmail(userInfo?.emailList?.[0] || null);
     } else {
       setFromEmail(userInfo?.defaultEmail || null);
     }

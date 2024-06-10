@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView} from 'react-native';
+import {KeyboardAvoidingView, ScrollView} from 'react-native';
 import {addStageStyles as styles} from '../styles/addStage.style';
 import Container from '../../../layouts/Container.layout';
 import RightLeftActionHeader from '../../../components/core/headers/RightLeftActionHeader.core.component';
@@ -45,27 +45,30 @@ const AddStage: React.FC<{
         rightHandlerDisable={loading}
         rightHandler={handleSubmit}
       />
-      <ScrollView
-        style={globalStyles.flex1}
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.containerStyle}>
-        {addStageForms.map((each, eachIndex) => (
-          <CustomFieldLayout
-            label={each.title}
-            value={values[each.name]}
-            placeholder={each.placeholder}
-            onChange={handleChange}
-            type={each.dropdown ? 6 : 1}
-            tag={each.name}
-            index={eachIndex}
-            key={eachIndex}
-            disabled={edit && each.name === 'pipeline' ? true : false}
-            options={renderOptions(each)}
-            showRemove={false}
-            Component={each.Component}
-          />
-        ))}
-      </ScrollView>
+      <KeyboardAvoidingView style={globalStyles.flex1}>
+        <ScrollView
+          style={globalStyles.flex1}
+          showsVerticalScrollIndicator={false}
+          automaticallyAdjustKeyboardInsets
+          contentContainerStyle={styles.containerStyle}>
+          {addStageForms.map((each, eachIndex) => (
+            <CustomFieldLayout
+              label={each.title}
+              value={values[each.name]}
+              placeholder={each.placeholder}
+              onChange={handleChange}
+              type={each.dropdown ? 6 : 1}
+              tag={each.name}
+              index={eachIndex}
+              key={eachIndex}
+              disabled={edit && each.name === 'pipeline' ? true : false}
+              options={renderOptions(each)}
+              showRemove={false}
+              Component={each.Component}
+            />
+          ))}
+        </ScrollView>
+      </KeyboardAvoidingView>
     </Container>
   );
 };

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {customMargin} from '../../../assets/styles/global.style.asset';
@@ -51,7 +52,7 @@ const TaskItem: React.FC<taskItem> = ({
   const dispatch = customUseDispatch();
   const handleMarkDone = async () => {
     if (from === 'dashboard') {
-      const result = await contactApiHelper.contactTaskDone({
+      const result: any = await contactApiHelper.contactTaskDone({
         taskId: id,
         done: true,
       });
@@ -104,7 +105,7 @@ const TaskItem: React.FC<taskItem> = ({
         <Text style={[typographies.bodyXS, {color: colors.gray4}]}>
           {`${formatDate(
             dateTime || taskDate + ' ' + taskTime,
-            'DD MMM, YYYY',
+            'MMM DD, YYYY',
             '',
             true,
           )} . ${formatDate(

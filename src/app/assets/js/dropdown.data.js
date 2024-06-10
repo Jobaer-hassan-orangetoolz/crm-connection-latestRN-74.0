@@ -246,7 +246,7 @@ const contactTaskTabOptions = [
 const inboxTaskTabOptions = [
   {name: 'All', value: inboxThreadModel.inboxTab.all},
   {name: 'Unread', value: inboxThreadModel.inboxTab.unread},
-  {name: 'Favorites', value: inboxThreadModel.inboxTab.favourite},
+  {name: 'Important', value: inboxThreadModel.inboxTab.favourite},
   {name: 'Archived', value: inboxThreadModel.inboxTab.archived},
 ];
 const taskTitles = {
@@ -259,7 +259,7 @@ const taskTitles = {
   7: {title: 'Others', Icon: MoreIcon, type: 7},
 };
 const inboxActionOptions = [
-  {name: 'Inbox', icon: <ArchiveIcon />, value: 'inbox'},
+  {name: 'UnArchived', icon: <ArchiveIcon />, value: 'inbox'},
   {name: 'Archive', icon: <InboxIcon fill={colors.gray0} />, value: 'archive'},
   {
     name: 'Mark as important',
@@ -393,6 +393,7 @@ const probability = [
   {value: 11, title: 'LOST'},
 ];
 const probabilityPercentage = {
+  0: '0%',
   1: '10%',
   2: '20%',
   3: '30%',
@@ -497,7 +498,7 @@ const addDealForms = [
     title: 'Closing Date',
     name: 'closingDate',
     inputProps: {},
-    placeholder: 'dd/mm/yyyy',
+    placeholder: 'mm/dd/yyyy',
     type: CustomFieldModel.TYPE_DATE,
   },
   {
@@ -549,7 +550,7 @@ const addTaskForms = [
     title: 'Due Date',
     name: 'date',
     inputProps: {},
-    placeholder: 'dd/mm/yyyy',
+    placeholder: 'mm/dd/yyyy',
     type: CustomFieldModel.TYPE_DATE,
   },
   {

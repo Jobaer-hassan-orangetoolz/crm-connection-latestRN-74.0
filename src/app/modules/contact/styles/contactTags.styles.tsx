@@ -7,6 +7,9 @@ export const contactTagsStyles = StyleSheet.create({
   container: {
     ...customPadding(8),
     gap: 8,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    width: '100%',
   },
   gap_8: {gap: rs(8)},
   taskContainer: {backgroundColor: colors.white, flexGrow: 1},

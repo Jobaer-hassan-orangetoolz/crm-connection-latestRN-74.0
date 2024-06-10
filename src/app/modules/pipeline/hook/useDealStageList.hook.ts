@@ -15,8 +15,10 @@ const useDealStageList = () => {
     customUseSelector(dealStagesStates);
   const dispatch = customUseDispatch();
   const handlePipeline = (item: any) => {
-    dispatch(storePipelineValue(item));
-    dispatch(searchingAction(item.pipelineId));
+    if (item.pipelineId !== pipeline.pipelineId) {
+      dispatch(storePipelineValue(item));
+      dispatch(searchingAction(item.pipelineId));
+    }
   };
   const onRefresh = () => {
     dispatch(refreshingAction(pipeline.pipelineId));

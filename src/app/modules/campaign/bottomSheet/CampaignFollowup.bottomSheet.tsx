@@ -60,7 +60,7 @@ const CampaignFollowupBottomSheet: React.FC<{
     <View
       style={{
         ...customPadding(12, 20, 10, 20),
-        minHeight: state?.isLoading && SCREEN_HEIGHT * 0.3,
+        // minHeight: state?.isLoading && SCREEN_HEIGHT * 0.3,
       }}>
       {state.isLoading ? (
         <View style={globalStyles.activityCenter}>

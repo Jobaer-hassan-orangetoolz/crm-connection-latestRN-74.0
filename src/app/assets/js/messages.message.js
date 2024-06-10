@@ -74,4 +74,6 @@ export const messages = {
     'Can not setup call environment.Please talk with our support team',
   wait2min: 'Please wait a while, it might takes 2-3 minutes',
   succAddWait: 'Successfully added. Please Refresh after a while',
+  scheduleMsgSuccess: 'Schedule Message set successfully',
+  scheduleEmailSuccess: 'Schedule Email set successfully',
 };

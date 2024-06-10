@@ -126,6 +126,8 @@ const useHome = () => {
               type: parseInt(`${type}`),
               id: contact.id,
               name: title,
+              number: contact?.number,
+              email: contact?.email,
             });
           } else if (_type === 'killed') {
             if (!isEmpty(contact)) {
@@ -135,6 +137,8 @@ const useHome = () => {
                 type: parseInt(`${type}`),
                 id: contact.id,
                 name: title,
+                number: contact?.number,
+                email: contact?.email,
               });
               dispatch(
                 readUnreadMessage({
@@ -192,6 +196,8 @@ const useHome = () => {
             type: parseInt(`${type}`),
             id: contact.id,
             name: title,
+            number: contact?.number,
+            email: contact?.email,
           });
           dispatch(
             readUnreadMessage({

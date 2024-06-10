@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
@@ -327,11 +328,15 @@ const Conversation = ({
               ? {}
               : styles.containerRight,
           ]}>
-          <Text style={typographies.bodyXSBold}>
+          <Text
+            numberOfLines={1}
+            ellipsizeMode="tail"
+            style={[typographies.bodyXSBold, {flex: 1}]}>
             {formatPhoneNumber(item.from)}
           </Text>
           <View style={[globalStyles.dot4, {backgroundColor: colors.gray4}]} />
-          <Text style={[typographies.bodyXS, {color: colors.gray4}]}>
+          <Text
+            style={[typographies.bodyXS, {color: colors.gray4, flexShrink: 0}]}>
             {getTimeFromMS(item.timelineCreatedAt)}
           </Text>
         </View>
@@ -370,8 +375,12 @@ const styles = StyleSheet.create({
     borderColor: colors.gray8,
     alignSelf: 'flex-end',
   },
-  body: {gap: 8 /* flexGrow: 1 */},
-  senderWrp: {flexDirection: 'row', gap: 4, alignItems: 'center'},
+  body: {gap: 8 /* flexGrow: 1 */, flexGrow: 1},
+  senderWrp: {
+    flexDirection: 'row',
+    gap: 4,
+    alignItems: 'center',
+  },
   /* content type design */
   smsBoxIn: {
     ...customPadding(10, 16, 10, 16),

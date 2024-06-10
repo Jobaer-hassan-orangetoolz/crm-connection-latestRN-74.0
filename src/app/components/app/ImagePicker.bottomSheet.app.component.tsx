@@ -25,7 +25,7 @@ const ImagePickerBottomSheet: React.FC<{
   };
   const handleOpenGallery = () => {
     global.showBottomSheet({flag: false});
-    imagePicker.openGallery({success, failed, multiple: true});
+    imagePicker.openGallery({success, failed, multiple: false});
   };
   return (
     <View>

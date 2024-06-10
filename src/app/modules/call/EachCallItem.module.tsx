@@ -53,8 +53,8 @@ const EachCallItem: React.FC<{
         </View>
         <Text style={styles.dateText}>
           {typeof date === 'object'
-            ? formatDate(`${date}`, 'DD MMM, YYYY hh:mm A', '', true)
-            : formatDate(date, 'DD MMM, YYYY hh:mm A', '', true)}
+            ? formatDate(`${date}`, 'MMM DD, YYYY hh:mm A', '', true)
+            : formatDate(date, 'MMM DD, YYYY hh:mm A', '', true)}
         </Text>
       </View>
     </TouchableOpacity>

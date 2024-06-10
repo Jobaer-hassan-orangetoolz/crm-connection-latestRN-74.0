@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, View} from 'react-native';
+import {KeyboardAvoidingView, ScrollView, View} from 'react-native';
 import Container from '../../../layouts/Container.layout';
 import {addContactStyles as styles} from './styles/add-contact.style';
 import RightLeftActionHeader from '../../../components/core/headers/RightLeftActionHeader.core.component';
@@ -141,17 +141,20 @@ const AddContact: React.FC<routes> = ({route: {params: {id, action} = {}}}) => {
         rightHandler={handleSubmit}
         isAnimating={isFormValid}
       />
-      <ScrollView
-        style={styles.container}
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={[
-          styles.containerStyle,
-          action && action === 'edit' && isLoading
-            ? globalStyles.centerView
-            : {},
-        ]}>
-        {renderView()}
-      </ScrollView>
+      <KeyboardAvoidingView style={globalStyles.flex1}>
+        <ScrollView
+          style={styles.container}
+          automaticallyAdjustKeyboardInsets
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={[
+            styles.containerStyle,
+            action && action === 'edit' && isLoading
+              ? globalStyles.centerView
+              : {},
+          ]}>
+          {renderView()}
+        </ScrollView>
+      </KeyboardAvoidingView>
     </Container>
   );
 };

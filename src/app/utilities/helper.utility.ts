@@ -211,7 +211,7 @@ function formatMessageTimestamp(timeString: any) {
   } else if (currentTime.clone().subtract(1, 'days').isSame(utcTime, 'day')) {
     return 'Yesterday';
   } else {
-    return utcTime.tz(timezone).format('DD/MM');
+    return utcTime.tz(timezone).format('MM/DD');
   }
 }
 const displayTextWithMentions = (inputText: string) => {
@@ -438,12 +438,13 @@ const conversionRate = (val: any) => {
   }
   return rate;
 };
-const calculateCash = (amount: number = 0, fixedCount?: number) => {
+const calculateCash = (value: any = 0, fixedCount?: number) => {
   var flag = '';
   // 1000 = 1K
   // 1000000 = 1M = 1K * 1000
   // 1M * 1000 = 1B
   // 1B * 1000 = 1T
+  let amount = parseFloat(value);
   if (isEmpty(amount) || isNaN(Number(amount))) {
     return '$' + 0 + flag;
   }
@@ -477,7 +478,7 @@ const calculateCash = (amount: number = 0, fixedCount?: number) => {
     flag = 'K';
   }
   // return '$' + (Math.round(totalDeal * 100) / 100) + flag
-  return '$' + amount.toFixed(fixedCount || 2) + flag;
+  return '$' + amount?.toFixed(fixedCount || 2) + flag;
 };
 const htmlEntityReplace = (string: any) => {
   if (isEmpty(string)) {

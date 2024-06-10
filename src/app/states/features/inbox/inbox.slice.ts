@@ -41,9 +41,13 @@ const inboxSlice = customCreateSlice({
       if (index === -1) {
         return;
       }
-      let prevData = [...state.list];
-      prevData.splice(index, 1);
-      state.list = prevData;
+      if (state.tab === inboxTaskTabOptions[3].value) {
+        state.list.splice(index, 1);
+      } else {
+        let prevData = [...state.list];
+        prevData.splice(index, 1);
+        state.list = prevData;
+      }
     },
     importantUnimportantMessage: () => {},
     successImportant: (state: any, payload: any) => {
@@ -51,13 +55,20 @@ const inboxSlice = customCreateSlice({
       if (index === -1) {
         return;
       }
-      const updatedData = [...state.list];
-      updatedData[index] = {
-        ...updatedData[index],
-        contactInfo: {...updatedData[index]?.contactInfo, isFavourite: status},
-      };
-      updatedData;
-      state.list = [...updatedData];
+      if (state.tab === inboxTaskTabOptions[2].value) {
+        state.list.splice(index, 1);
+      } else {
+        const updatedData = [...state.list];
+        updatedData[index] = {
+          ...updatedData[index],
+          contactInfo: {
+            ...updatedData[index]?.contactInfo,
+            isFavourite: status,
+          },
+        };
+        updatedData;
+        state.list = [...updatedData];
+      }
     },
     searchInboxList: (state: any, payload: any) => {
       const text = payload.payload;
@@ -74,7 +85,11 @@ const inboxSlice = customCreateSlice({
       if (index === -1) {
         return;
       }
-      state.list[index].isRead = status === true ? 1 : 0;
+      if (state.tab === inboxTaskTabOptions[1].value) {
+        state.list.splice(index, 1);
+      } else {
+        state.list[index].isRead = status === true ? 1 : 0;
+      }
     },
     incomingMessage: (state: any, payload: any) => {
       state.list = [{...payload.payload}, ...state.list];

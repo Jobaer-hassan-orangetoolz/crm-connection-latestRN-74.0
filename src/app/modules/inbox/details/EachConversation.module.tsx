@@ -45,7 +45,7 @@ type params = {
 };
 
 interface conversationP {
-  route?: {
+  route: {
     params?: params;
   };
 }
@@ -62,7 +62,7 @@ const EachConversation: React.FC<conversationP> = ({
       isFavourite,
       email,
       isRead,
-    },
+    } = {},
   },
 }) => {
   const {list, isLoading, getMore} = useConversationEffect({

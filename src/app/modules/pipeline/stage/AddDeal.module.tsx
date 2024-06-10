@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView} from 'react-native';
+import {KeyboardAvoidingView, ScrollView} from 'react-native';
 import {addStageStyles as styles} from '../styles/addStage.style';
 import Container from '../../../layouts/Container.layout';
 import RightLeftActionHeader from '../../../components/core/headers/RightLeftActionHeader.core.component';
@@ -130,76 +130,79 @@ const AddDeal: React.FC<addDealParams> = ({
           handleSubmit();
         }}
       />
-      <ScrollView
-        style={globalStyles.flex1}
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.containerStyle}>
-        {addDealForms.map((each, eachIndex) =>
-          edit ? (
-            each.name !== 'contact' && (
+      <KeyboardAvoidingView style={globalStyles.flex1}>
+        <ScrollView
+          style={globalStyles.flex1}
+          automaticallyAdjustKeyboardInsets
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.containerStyle}>
+          {addDealForms.map((each, eachIndex) =>
+            edit ? (
+              each.name !== 'contact' && (
+                <CustomFieldLayout
+                  label={each.title}
+                  value={(values as any)[each.name]}
+                  placeholder={each.placeholder}
+                  onChange={handleChange}
+                  type={each.type}
+                  tag={each.name}
+                  index={eachIndex}
+                  key={eachIndex}
+                  options={renderOptions(each)}
+                  showRemove={false}
+                  disabled={each.name === 'pipeline' ? true : false}
+                  Component={each.Component}
+                />
+              )
+            ) : move ? (
+              (each.name === 'pipeline' || each.name === 'stage') && (
+                <CustomFieldLayout
+                  label={each.title}
+                  value={(values as any)[each.name]}
+                  placeholder={each.placeholder}
+                  onChange={handleChange}
+                  type={each.type}
+                  tag={each.name}
+                  index={eachIndex}
+                  key={eachIndex}
+                  options={renderOptions(each)}
+                  showRemove={false}
+                  Component={each.Component}
+                />
+              )
+            ) : (
               <CustomFieldLayout
                 label={each.title}
-                value={(values as any)[each.name]}
+                value={
+                  each.name === 'contact'
+                    ? !isEmpty(contactDetails)
+                      ? getTitle()
+                      : values.name || values.email || values.number
+                    : (values as any)[each.name]
+                }
                 placeholder={each.placeholder}
                 onChange={handleChange}
                 type={each.type}
                 tag={each.name}
                 index={eachIndex}
-                key={eachIndex}
-                options={renderOptions(each)}
-                showRemove={false}
-                disabled={each.name === 'pipeline' ? true : false}
-                Component={each.Component}
-              />
-            )
-          ) : move ? (
-            (each.name === 'pipeline' || each.name === 'stage') && (
-              <CustomFieldLayout
-                label={each.title}
-                value={(values as any)[each.name]}
-                placeholder={each.placeholder}
-                onChange={handleChange}
-                type={each.type}
-                tag={each.name}
-                index={eachIndex}
-                key={eachIndex}
-                options={renderOptions(each)}
-                showRemove={false}
-                Component={each.Component}
-              />
-            )
-          ) : (
-            <CustomFieldLayout
-              label={each.title}
-              value={
-                each.name === 'contact'
-                  ? !isEmpty(contactDetails)
-                    ? getTitle()
-                    : values.name || values.email || values.number
-                  : (values as any)[each.name]
-              }
-              placeholder={each.placeholder}
-              onChange={handleChange}
-              type={each.type}
-              tag={each.name}
-              index={eachIndex}
-              disabled={
-                from
-                  ? each.name === 'pipeline' || each.name === 'stage'
+                disabled={
+                  from
+                    ? each.name === 'pipeline' || each.name === 'stage'
+                      ? true
+                      : false
+                    : each.name === 'contact' && !isEmpty(contactDetails)
                     ? true
                     : false
-                  : each.name === 'contact' && !isEmpty(contactDetails)
-                  ? true
-                  : false
-              }
-              key={eachIndex}
-              options={renderOptions(each)}
-              showRemove={false}
-              Component={each.Component}
-            />
-          ),
-        )}
-      </ScrollView>
+                }
+                key={eachIndex}
+                options={renderOptions(each)}
+                showRemove={false}
+                Component={each.Component}
+              />
+            ),
+          )}
+        </ScrollView>
+      </KeyboardAvoidingView>
     </Container>
   );
 };

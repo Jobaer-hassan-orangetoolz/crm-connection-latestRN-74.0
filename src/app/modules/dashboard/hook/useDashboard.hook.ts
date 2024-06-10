@@ -1,6 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import {useEffect, useState} from 'react';
-import {dashboardStates, userStates} from '../../../states/allSelector.state';
+import {
+  dashboardStates,
+  taskStates,
+  userStates,
+} from '../../../states/allSelector.state';
 import {
   customUseDispatch,
   customUseSelector,
@@ -68,9 +72,6 @@ const useDashboard = () => {
       const payload = {page: 1, perPage: 3, type: 'today'};
       dispatch(isGettingTask(payload));
     }
-    // NativeModules.PermissionModule.requestPermissions((data: string) => {
-    //   console.log('Received data from Kotlin:', data);
-    // });
   }, []);
   useEffect(() => {
     if (isMount) {

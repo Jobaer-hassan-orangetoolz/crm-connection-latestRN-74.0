@@ -7,5 +7,5 @@ export const addContactStyles = StyleSheet.create({
   containerStyle: {gap: 20, ...customPadding(24, 20, 24, 20)},
   groupFieldWrp: {gap: 12, flexDirection: 'row'},
   groupField: {gap: 12, flexDirection: 'row'},
-  hasMore: {color: colors.primary},
+  hasMore: {color: colors.primary, ...customPadding(5, 5, 5, 0)},
 });

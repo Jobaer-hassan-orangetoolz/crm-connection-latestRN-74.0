@@ -76,7 +76,7 @@ const CampaignDetails: React.FC<{
               {title}
             </Text>
             <Text style={[typographies.bodyMedium, {...customMargin(8)}]}>
-              {formatDate(createdAt, 'DD MMMM, YYYY', '', true)}
+              {formatDate(createdAt, 'MMM DD, YYYY', '', true)}
             </Text>
           </View>
           <View style={{...customPadding(20, 20, 20, 20)}}>

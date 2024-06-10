@@ -26,7 +26,7 @@ const useAddNote = (id?: number, contact?: boolean) => {
     id: number | string;
   }>({
     name: '',
-    id: id,
+    id: id || '',
   });
   useEffect(() => {
     if (isEmpty(teamUser)) {
@@ -35,8 +35,8 @@ const useAddNote = (id?: number, contact?: boolean) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const handleSave = () => {
-    if (!note.current && contactInfo.id) {
-      contactInfo.id
+    if (!note.current || !contactInfo.id) {
+      !contactInfo.id
         ? showAlertWithOneAction({
             title: messages.invalid,
             body: messages.messageContactNotEmpty,

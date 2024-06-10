@@ -20,7 +20,13 @@ import {
 } from '../../../../packages/redux.package';
 import {contactsStates} from '../../../../states/allSelector.state';
 import {refreshingAction} from '../../../../states/features/contact/contacts.slice';
-
+import {
+  isGettingContactCampaign,
+  isGettingContactCustomField,
+  isGettingContactPipeline,
+  isGettingContactTags,
+  refreshingContactDetails,
+} from '../../../../states/features/contact/aboutContact.slice';
 export interface paramsP {
   id?: number;
   action?: 'edit' | 'add';
@@ -256,8 +262,13 @@ const useAddContact = ({id, action}: paramsP) => {
       } else {
         /* push new data to 0 index */
       }
+      dispatch(refreshingContactDetails({id, navigation}));
+      dispatch(isGettingContactCampaign(id));
+      dispatch(isGettingContactTags(id));
+      dispatch(isGettingContactPipeline(id));
+      dispatch(isGettingContactCustomField(id));
       setIsSubmitting(false);
-      navigation.navigate(screens.contacts);
+      navigation.goBack();
     } else {
       showAlertWithOneAction({
         title: messages.invalidAddContactForm,

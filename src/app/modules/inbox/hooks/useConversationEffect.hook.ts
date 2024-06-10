@@ -15,25 +15,29 @@ import {
   currentContactId,
 } from '../../../services/models/InboxThread.model';
 import contactApiHelper from '../../../services/api/helper/contactApi.helper';
+import {useIsFocused} from '@react-navigation/native';
 
 const useConversationEffect = ({id}: any) => {
   const dispatch = customUseDispatch();
+  const isFocused = useIsFocused();
   const {isGetting, hasMore, list, isLoading} =
     customUseSelector(eachMessageStates);
   useEffect(() => {
-    if (!isGetting) {
-      dispatch(isGettingAction({contactId: id}));
+    if (isFocused) {
+      if (!isGetting) {
+        dispatch(isGettingAction({contactId: id}));
+      }
+      if (!contactDetails || id !== contactDetails?.value?.id) {
+        getContactInfo();
+      }
+      currentContactId.id = id;
     }
-    if (!contactDetails || id !== contactDetails?.value?.id) {
-      getContactInfo();
-    }
-    currentContactId.id = id;
     return () => {
       dispatch(clearAction());
       currentContactId.id = -1;
       contactDetails.value = null;
     };
-  }, []);
+  }, [isFocused]);
   const getMore = () => {
     if (hasMore) {
       dispatch(gettingMoreAction({contactId: id}));
@@ -54,6 +58,7 @@ const useConversationEffect = ({id}: any) => {
     isGetting,
     isLoading,
     getMore,
+    isFocused,
   };
 };
 export default useConversationEffect;

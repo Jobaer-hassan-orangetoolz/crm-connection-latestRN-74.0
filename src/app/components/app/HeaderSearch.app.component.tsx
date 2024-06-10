@@ -8,6 +8,7 @@ interface headerSearchInterface {
   title: string;
   leftIcon?: boolean;
   border?: 'showBorder' | 'noBorder';
+  leftIconHandler?: () => void;
 }
 const HeaderSearch: React.FC<headerSearchInterface> = ({
   handleChange,
@@ -15,6 +16,7 @@ const HeaderSearch: React.FC<headerSearchInterface> = ({
   title,
   leftIcon = true,
   border = 'showBorder',
+  leftIconHandler,
 }) => {
   const [isShowSearch, setIsShowSearch] = useState<boolean>(false);
 
@@ -31,8 +33,9 @@ const HeaderSearch: React.FC<headerSearchInterface> = ({
       rightHandlerDisable={false}
       rightHandler={() => setIsShowSearch(true)}
       isAnimating={false}
+      leftIconHandler={leftIconHandler}
       border={border}
-      leftIcon={leftIcon ? <LeftArrowIcon height={28} width={28} /> : null}
+      leftIcon={leftIcon ? <LeftArrowIcon height={28} width={28} /> : <></>}
     />
   );
 };

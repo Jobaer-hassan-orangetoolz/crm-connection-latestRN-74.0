@@ -37,6 +37,7 @@ import {
 import campaignApiHelper from '../../../services/api/helper/campaignApi.helper';
 import BottomSheetSelectWithSubtitle from '../../../components/app/BottomSheetSelectWithSubtitle.app.component';
 import {messages} from '../../../assets/js/messages.message';
+import InboxThreadModel from '../../../services/models/InboxThread.model';
 type params = {
   contactId?: any;
   email?: string;
@@ -193,16 +194,24 @@ const NewEmail: React.FC<newEmailType> = ({
     isLoading,
   } = useNewEmail({contactId: contactId, from: from});
   const getDataHandler = async (query: any, success: any) => {
-    const {page, perPage} = query;
-    const payload = {page: page, perPage: perPage};
-    const result = await campaignApiHelper.getCampaignEmail(payload);
-    if (page === 1 && !isEmpty(userInfo?.defaultEmail)) {
-      result.body.unshift({
-        campaignEmail: userInfo.defaultEmail,
-        title: 'default',
-      });
+    if (userInfo.email_provider === InboxThreadModel.emailProvider.nylas) {
+      const payload = {
+        status: true,
+        body: userInfo.emailList,
+      };
+      success(payload);
+    } else {
+      const {page, perPage} = query;
+      const payload = {page: page, perPage: perPage};
+      const result = await campaignApiHelper.getCampaignEmail(payload);
+      if (page === 1 && !isEmpty(userInfo?.defaultEmail)) {
+        result.body.unshift({
+          campaignEmail: userInfo.defaultEmail || userInfo.email,
+          title: 'default',
+        });
+      }
+      success(result);
     }
-    success(result);
   };
   return (
     <Container>
@@ -235,18 +244,30 @@ const NewEmail: React.FC<newEmailType> = ({
               options: {
                 getDataHandler,
                 flatList: true,
-                titleField: 'campaignEmail',
+                titleField:
+                  userInfo.email_provider ===
+                  InboxThreadModel.emailProvider.nylas
+                    ? 'FULL__DATA'
+                    : 'campaignEmail',
                 title: 'Email list',
-                subtitleField: 'title',
+                subtitleField:
+                  userInfo.email_provider ===
+                  InboxThreadModel.emailProvider.nylas
+                    ? 'FULL__DATA'
+                    : 'title',
                 selectedValue: fromEmail,
                 titleFieldFormatter: (_value: any) => {
-                  return _value.campaignEmail;
+                  return userInfo.email_provider ===
+                    InboxThreadModel.emailProvider.nylas
+                    ? _value
+                    : _value.campaignEmail;
                 },
               },
               onChange: (value: string) => {
                 handleFromEmail(value);
               },
             }}
+            textStyles={{width: '100%'}}
           />
           <EmailActionField
             title={'To'}

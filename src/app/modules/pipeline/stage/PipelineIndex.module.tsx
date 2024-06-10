@@ -52,7 +52,7 @@ const StageModule: React.FC = () => {
         keyExtractor={(_, index) => index.toString()}
         renderItem={_renderItem}
         keyboardShouldPersistTaps="always"
-        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
         contentContainerStyle={
           isLoading || list.length === 0
             ? globalStyles.emptyFlexBox

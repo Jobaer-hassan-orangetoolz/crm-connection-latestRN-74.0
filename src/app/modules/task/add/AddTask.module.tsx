@@ -5,7 +5,7 @@ import RightLeftActionHeader from '../../../components/core/headers/RightLeftAct
 import {titles} from '../../../assets/js/titles.message';
 import {buttons} from '../../../assets/js/buttons.message';
 import LeftArrowIcon from '../../../assets/icons/LeftArrow.icon.asset';
-import {ScrollView} from 'react-native';
+import {KeyboardAvoidingView, ScrollView} from 'react-native';
 import {globalStyles} from '../../../assets/styles/global.style.asset';
 import {addTaskForms} from '../../../assets/js/dropdown.data';
 import CustomFieldLayout from '../../contact/add/custom-fields/Layout.customField';
@@ -56,41 +56,44 @@ const AddTask: React.FC<{
         leftIcon={<LeftArrowIcon />}
         isAnimating={false}
       />
-      <ScrollView
-        style={globalStyles.flex1}
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.containerStyle}>
-        {addTaskForms.map((each, eachIndex) => (
-          <CustomFieldLayout
-            label={each.title}
-            value={
-              (values as any)[each.name]?.title || (values as any)[each.name]
-            }
-            placeholder={each.placeholder}
-            onChange={handleChange}
-            type={each.type}
-            tag={each.name}
-            index={eachIndex}
-            disabled={
-              (edit && each.name === 'contact') ||
-              (edit && each.name === 'assignTo')
-                ? true
-                : contact && each.name === 'contact'
-                ? true
-                : task && each.name === 'type'
-                ? true
-                : false
-            }
-            key={eachIndex}
-            onClose={() => {
-              dispatch(storeBottomSheetData());
-            }}
-            options={renderOptions(each)}
-            showRemove={false}
-            Component={each.Component}
-          />
-        ))}
-      </ScrollView>
+      <KeyboardAvoidingView style={globalStyles.flex1}>
+        <ScrollView
+          style={globalStyles.flex1}
+          automaticallyAdjustKeyboardInsets
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.containerStyle}>
+          {addTaskForms.map((each, eachIndex) => (
+            <CustomFieldLayout
+              label={each.title}
+              value={
+                (values as any)[each.name]?.title || (values as any)[each.name]
+              }
+              placeholder={each.placeholder}
+              onChange={handleChange}
+              type={each.type}
+              tag={each.name}
+              index={eachIndex}
+              disabled={
+                (edit && each.name === 'contact') ||
+                (edit && each.name === 'assignTo')
+                  ? true
+                  : contact && each.name === 'contact'
+                  ? true
+                  : task && each.name === 'type'
+                  ? true
+                  : false
+              }
+              key={eachIndex}
+              onClose={() => {
+                dispatch(storeBottomSheetData());
+              }}
+              options={renderOptions(each)}
+              showRemove={false}
+              Component={each.Component}
+            />
+          ))}
+        </ScrollView>
+      </KeyboardAvoidingView>
     </Container>
   );
 };

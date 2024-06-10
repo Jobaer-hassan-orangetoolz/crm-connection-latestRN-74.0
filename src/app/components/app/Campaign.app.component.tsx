@@ -95,7 +95,7 @@ const CampaignComponent: React.FC<{
         />
         <View style={styles.dot} />
         <Text style={[typographies.bodyXS, {color: colors.gray4}]}>
-          {formatDate(createdAt, 'DD MMMM, YYYY', '', true)}
+          {formatDate(createdAt, 'MMM DD, YYYY', '', true)}
         </Text>
       </View>
       <View style={styles.middleContainer}>

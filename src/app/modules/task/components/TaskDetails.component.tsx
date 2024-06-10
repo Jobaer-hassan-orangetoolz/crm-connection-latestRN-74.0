@@ -116,7 +116,7 @@ const TaskDetailsComponent: React.FC<{
             }
             text={formatDate(
               dateTime || taskDate + ' ' + taskTime,
-              'DD MMM, YYYY',
+              'MMM DD, YYYY',
               '',
               true,
             )}

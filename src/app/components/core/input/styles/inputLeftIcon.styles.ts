@@ -23,6 +23,7 @@ export const inputLeftIconStyles = StyleSheet.create({
     color: colors.gray0,
     flexGrow: 1,
     flex: 1,
+    flexShrink: 1,
   },
   multi: {textAlignVertical: 'top', maxHeight: rs(150)},
 });

@@ -60,7 +60,7 @@ const NoteItem: React.FC<{
       }}>
       <Text style={typographies.bodyXSBold}>{name}</Text>
       <Text style={[typographies.bodyXS, {...customMargin(0, 0, 12)}]}>
-        {formatDate(createdAt, 'DD MMM, YYYY', '', true)}
+        {formatDate(createdAt, 'MMM DD, YYYY', '', true)}
       </Text>
       {modifiedMentionText()}
     </View>

@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Keyboard,
   KeyboardAvoidingView,
+  Platform,
   ScrollView,
   Text,
   TouchableWithoutFeedback,
@@ -24,6 +25,7 @@ import CustomButton from '../../components/core/button/CustomButton.core.compone
 import {textInput} from '../../assets/styles/properties.asset';
 import InputLeftIcon from '../../components/core/input/InputLeftIcon.core.component';
 import {globalStyles} from '../../assets/styles/global.style.asset';
+import rs from '../../assets/styles/responsiveSize.style.asset';
 
 const LoginIndex: React.FC = () => {
   const {
@@ -36,71 +38,75 @@ const LoginIndex: React.FC = () => {
   } = useLogin();
   return (
     <SplashContainer containerStyle={styles.mainContainer}>
-      <KeyboardAvoidingView style={globalStyles.flex1}>
-        <ScrollView
-          keyboardShouldPersistTaps={'always'}
-          contentContainerStyle={globalStyles.flex1}
-          showsVerticalScrollIndicator={false}>
-          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-            <View style={globalStyles.flex1}>
-              <View style={styles.logoContainer}>
-                <ImagePreview source={imageLink.logo} styles={styles.logo} />
-              </View>
-              <View style={styles.inputContainer}>
-                <Text style={[typographies.headingLarge, styles.headingText]}>
-                  {titles.signIn}
-                </Text>
-                <View style={styles.gap16}>
-                  <InputLeftIcon
-                    icon={
-                      <EmailIcon fill={colors.gray4} width={20} height={20} />
-                    }
-                    placeholder={placeholders.emailAddress}
-                    name={titles.email}
-                    onChangeText={onChangeValue}
-                    inputProps={{
-                      inputMode: textInput.inputMode.email,
-                      ref: emailInputRef,
-                      returnKeyType: textInput.type.next,
-                      blurOnSubmit: false,
-                      autoCapitalize: textInput.capitalize.none,
-                      autoComplete: textInput.autoComplete.email,
-                      onSubmitEditing: () => passInputRef.current.focus(),
-                    }}
+      <TouchableWithoutFeedback
+        onPress={Keyboard.dismiss}
+        style={globalStyles.flex1}>
+        <KeyboardAvoidingView
+          style={globalStyles.flex1}
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+          <ScrollView
+            keyboardShouldPersistTaps={'always'}
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={globalStyles.flex1}>
+            <View style={styles.logoContainer}>
+              <ImagePreview source={imageLink.logo} styles={styles.logo} />
+            </View>
+            <View
+              style={[
+                styles.inputContainer,
+                // eslint-disable-next-line react-native/no-inline-styles
+                {paddingBottom: Keyboard.isVisible() ? rs(40) : 0},
+              ]}>
+              <Text style={[typographies.headingLarge, styles.headingText]}>
+                {titles.signIn}
+              </Text>
+              <View style={styles.gap16}>
+                <InputLeftIcon
+                  icon={
+                    <EmailIcon fill={colors.gray4} width={20} height={20} />
+                  }
+                  placeholder={placeholders.emailAddress}
+                  name={titles.email}
+                  onChangeText={onChangeValue}
+                  inputProps={{
+                    inputMode: textInput.inputMode.email,
+                    ref: emailInputRef,
+                    returnKeyType: textInput.type.next,
+                    blurOnSubmit: false,
+                    autoCapitalize: textInput.capitalize.none,
+                    autoComplete: textInput.autoComplete.email,
+                    onSubmitEditing: () => passInputRef.current.focus(),
+                  }}
+                />
+                <PasswordInput
+                  name={titles.password}
+                  placeholder={placeholders.password}
+                  onChangeText={onChangeValue}
+                  inputRef={passInputRef}
+                  onSubmitEditing={handleLogin}
+                  returnKeyType={'go'}
+                />
+                <CustomButton
+                  text={buttons.signIn}
+                  classes="primary"
+                  isLoading={isLoading}
+                  onPress={handleLogin}
+                />
+                <View style={styles.conditionText}>
+                  <Text style={[typographies.bodySmall, styles.textAlign]}>
+                    {titles.bySigning}
+                  </Text>
+                  <ClickableText
+                    text={titles.termsAndCond}
+                    style={[typographies.bodySmallBold, {color: colors.gray4}]}
+                    onPress={handleNavigateToTC}
                   />
-                  <PasswordInput
-                    name={titles.password}
-                    placeholder={placeholders.password}
-                    onChangeText={onChangeValue}
-                    inputRef={passInputRef}
-                    onSubmitEditing={handleLogin}
-                    returnKeyType={'go'}
-                  />
-                  <CustomButton
-                    text={buttons.signIn}
-                    classes="primary"
-                    isLoading={isLoading}
-                    onPress={handleLogin}
-                  />
-                  <View style={styles.conditionText}>
-                    <Text style={[typographies.bodySmall, styles.textAlign]}>
-                      {titles.bySigning}
-                    </Text>
-                    <ClickableText
-                      text={titles.termsAndCond}
-                      style={[
-                        typographies.bodySmallBold,
-                        {color: colors.gray4},
-                      ]}
-                      onPress={handleNavigateToTC}
-                    />
-                  </View>
                 </View>
               </View>
             </View>
-          </TouchableWithoutFeedback>
-        </ScrollView>
-      </KeyboardAvoidingView>
+          </ScrollView>
+        </KeyboardAvoidingView>
+      </TouchableWithoutFeedback>
     </SplashContainer>
   );
 };

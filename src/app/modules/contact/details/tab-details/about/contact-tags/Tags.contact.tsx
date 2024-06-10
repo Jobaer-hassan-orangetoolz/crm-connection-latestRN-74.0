@@ -86,8 +86,7 @@ const ContactTags: React.FC<{
             ? contactTagsStyles.container
             : globalStyles.emptyFlexBox
         }
-        numColumns={3}
-        columnWrapperStyle={contactTagsStyles.gap_8}
+        horizontal={true}
         style={{...customPadding(0, 20, 20, 20)}}
         ListEmptyComponent={
           isLoading ? (
