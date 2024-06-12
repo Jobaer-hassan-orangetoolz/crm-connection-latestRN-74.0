@@ -1,13 +1,16 @@
 {
   "name": "xtropiademandgeneration",
-  "version": "5.2.3",
+  "version": "7.2.5",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "build-app-android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "submodule-pull": "git submodule update --init --force --remote",
+    "submodule-push": "git push origin HEAD:master"
   },
   "dependencies": {
     "@notifee/react-native": "^7.8.2",

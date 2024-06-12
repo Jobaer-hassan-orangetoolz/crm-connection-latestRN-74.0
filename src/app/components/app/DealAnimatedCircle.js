@@ -102,11 +102,11 @@ const CustomCircleAnimation = ({
       useNativeDriver: true,
     }).start();
   };
-  const strokeDasharray = ref.interpolate({
-    inputRange: [0, 1],
-    outputRange: [calculateDashArray(0), calculateDashArray(item.value)],
-    extrapolate: 'clamp',
-  });
+  // const strokeDasharray = ref.interpolate({
+  //   inputRange: [0, 1],
+  //   outputRange: [calculateDashArray(0), calculateDashArray(item.value)],
+  //   extrapolate: 'clamp',
+  // });
   return (
     <AnimatedCircle
       cx={radius}
@@ -116,7 +116,7 @@ const CustomCircleAnimation = ({
       stroke={item.color}
       strokeWidth={strokeWidth}
       strokeDashoffset={from}
-      strokeDasharray={strokeDasharray}
+      // strokeDasharray={strokeDasharray}
     />
   );
 };
